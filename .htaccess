@@ -1,13 +1,14 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+        RewriteBase /frameworkPatterns
 
-    # Se o arquivo ou diretório não existir, redirecione para index.php
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ public/index.php [L]
+        # Se o arquivo existe na raiz, redirecione para 404.php
+        RewriteCond %{REQUEST_FILENAME} -f
+        RewriteCond %{REQUEST_URI} ^/([^/]+)$
+        RewriteRule ^(.*)$ 404.php [L]
 
-    # Retornar erro 404 para qualquer outra tentativa de acesso direto a arquivos na raiz
-    RewriteCond %{REQUEST_FILENAME} -f
-    RewriteRule ^(.*)$ 404.php [L]
+        # Redirecionar todas as requisições para public/index.php
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ public/index.php [L]
 </IfModule>

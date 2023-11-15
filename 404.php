@@ -1,3 +1,3 @@
 <?php
 
-echo '404 not found';
+echo '404 not found.';
