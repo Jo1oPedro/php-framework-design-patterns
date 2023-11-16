@@ -7,6 +7,9 @@
         RewriteCond %{REQUEST_URI} ^/([^/]+)$
         RewriteRule ^(.*)$ 404.php [L]
 
+        # Redirecionar apenas a raiz para public/index.php
+        RewriteRule ^$ public/index.php [L]
+
         # Redirecionar todas as requisições para public/index.php
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteCond %{REQUEST_FILENAME} !-d
