@@ -2,6 +2,7 @@
 
 namespace Cascata\Framework\Http;
 
+use Cascata\Framework\Http\Exceptions\HttpException;
 use Cascata\Framework\Routing\RouterInterface;
 
 class Kernel
@@ -17,8 +18,10 @@ class Kernel
             [$routeHandler, $vars] = $this->router->dispatch($request);
 
             $response = call_user_func_array($routeHandler, $vars);
+        } catch (HttpException $exception) {
+            $response = new Response($exception->getMessage(), $exception->getStatusCode());
         } catch (\Exception $exception) {
-            $response = new Response($exception->getMessage(), 400);
+            $response = new Response($exception->getMessage(), 500);
         }
 
         return $response;

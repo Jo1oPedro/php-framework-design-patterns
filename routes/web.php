@@ -13,6 +13,8 @@ $routeGrouper->addRoute('POST', 'post/{id:\d+}', [PostsController::class, 'show'
 $routeGrouper->addRoute('GET', 'post/{id:\d+}', function($id) {
     return new Response("este é o id: " . $id);
 });
+$routeGrouper->addRoute('POST', 'teste', [PostsController::class, 'show']);
+
 /*return [
     ['GET', 'x', [HomeController::class, 'index']],
     ['GET', 'posts/{id:\d+}', [PostsController::class, 'show']],
