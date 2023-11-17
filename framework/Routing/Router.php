@@ -7,6 +7,7 @@ use Cascata\Framework\Http\Exceptions\HttpRequestMethodException;
 use Cascata\Framework\Http\Request;
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
+use Cascata\Framework\Routing\RouteGrouper;
 use function FastRoute\simpleDispatcher;
 
 class Router implements RouterInterface
@@ -17,14 +18,19 @@ class Router implements RouterInterface
     {
         // Creates a dispatcher
         $this->dispatcher = simpleDispatcher(function (RouteCollector $routeCollector) {
-            $routes = include BASE_PATH . "/routes/web.php";
+            include BASE_PATH . "/routes/web.php";
 
-            foreach($routes as $route) {
+            /** @var RouteGrouper $routeGrouper */
+            foreach($routeGrouper->getRoutes() as $route) {
                 $routeCollector->addRoute(...$route);
             }
         });
     }
 
+    /**
+     * @throws HttpException
+     * @throws HttpRequestMethodException
+     */
     public function dispatch(Request $request): array
     {
         $routeInfo = $this->extractRouteInfo($request);
