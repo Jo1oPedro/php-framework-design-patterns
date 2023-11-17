@@ -5,5 +5,6 @@ use App\Controller\PostsController;
 
 return [
     ['GET', 'x', [HomeController::class, 'index']],
-    ['GET', 'posts/{id:\d+}', [PostsController::class, 'show']]
+    ['GET', 'posts/{id:\d+}', [PostsController::class, 'show']],
+    ['POST', 'post/{id:\d+}', [PostsController::class, 'show']],
 ];
