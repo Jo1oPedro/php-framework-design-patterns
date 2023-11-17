@@ -8,6 +8,7 @@ declare(strict_types=1);
 use Cascata\Framework\Http\Kernel;
 use Cascata\Framework\Http\Request;
 use Cascata\Framework\Http\Response;
+use Cascata\Framework\Routing\Router;
 
 define('BASE_PATH', dirname(__DIR__));
 
@@ -16,8 +17,10 @@ require_once __DIR__ . "/../vendor/autoload.php";
 // request received
 $request = Request::createFromGlobals();
 
+$router = new Router();
+
 // perform some logic
-$kernel = new Kernel();
+$kernel = new Kernel($router);
 
 // send response (string of content)
 $response = $kernel->handle($request);
