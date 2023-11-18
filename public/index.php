@@ -7,7 +7,6 @@ declare(strict_types=1);
 
 use Cascata\Framework\Http\Kernel;
 use Cascata\Framework\Http\Request;
-use Cascata\Framework\Http\Response;
 use Cascata\Framework\Routing\Router;
 
 define('BASE_PATH', dirname(__DIR__));

@@ -7,7 +7,6 @@ use Cascata\Framework\Http\Exceptions\HttpRequestMethodException;
 use Cascata\Framework\Http\Request;
 use FastRoute\Dispatcher;
 use FastRoute\RouteCollector;
-use Cascata\Framework\Routing\RouteGrouper;
 use function FastRoute\simpleDispatcher;
 
 class Router implements RouterInterface

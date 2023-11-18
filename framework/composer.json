@@ -1,0 +1,23 @@
+{
+  "name": "cascata/framework-patterns",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "cascata",
+      "email": "joao.pedreira@estudante.ufjf.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Cascata\\Framework\\": "src/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.3"
+  },
+  "require": {
+    "nikic/fast-route": "^1.3"
+  }
+}
