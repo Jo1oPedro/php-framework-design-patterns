@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec06aa83e1f3180db304832df2a98c37",
+    "content-hash": "e0c536cd101e1553351550beefbe9423",
     "packages": [
         {
             "name": "cascata/framework-patterns",
