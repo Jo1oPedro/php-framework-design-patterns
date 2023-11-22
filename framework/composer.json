@@ -11,13 +11,16 @@
   ],
   "autoload": {
     "psr-4": {
-      "Cascata\\Framework\\": "src/"
+      "Cascata\\Framework\\": "src/",
+      "Cascata\\Framework\\Tests\\": "tests"
     }
   },
   "require-dev": {
-    "symfony/var-dumper": "^6.3"
+    "symfony/var-dumper": "^6.3",
+    "phpunit/phpunit": "^10.4"
   },
   "require": {
-    "nikic/fast-route": "^1.3"
+    "nikic/fast-route": "^1.3",
+    "psr/container": "^2.0"
   }
 }
