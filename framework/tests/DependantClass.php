@@ -1,12 +1,12 @@
 <?php
 
 namespace Cascata\Framework\Tests;
-use DependencyClass;
 
 class DependantClass
 {
     public function __construct(
-        private readonly DependencyClass $dependency
+        private readonly DependencyClass $dependency,
+        private readonly string $name
     ) {
     }
 

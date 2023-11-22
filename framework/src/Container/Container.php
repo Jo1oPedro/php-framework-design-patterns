@@ -4,10 +4,23 @@ namespace Cascata\Framework\Container;
 
 use Cascata\Framework\Container\Exceptions\ContainerException;
 use Psr\Container\ContainerInterface;
+use ReflectionException;
+use ReflectionParameter;
 
 class Container implements ContainerInterface
 {
+    public array $defaultPrimaryTypes = [
+        "string" => "",
+        "int" => 0,
+        "float" => 0.0,
+        "array" => [],
+    ];
     private array $services = [];
+
+    public function __construct()
+    {
+        $this->defaultPrimaryTypes["callable"] = function () {};
+    }
 
     /**
      * @throws ContainerException
@@ -23,6 +36,10 @@ class Container implements ContainerInterface
         $this->services[$id] = $concrete;
     }
 
+    /**
+     * @throws ReflectionException
+     * @throws ContainerException
+     */
     public function get(string $id)
     {
         if(!$this->has($id)) {
@@ -39,9 +56,9 @@ class Container implements ContainerInterface
     }
 
     /**
-     * @throws \ReflectionException
+     * @throws ReflectionException
      */
-    private function resolve(string|object $class)
+    private function resolve(string|object $class): object
     {
         // 1 . Instanciate a Reflection class (dump and check)
         $reflectionClass = new \ReflectionClass($class);
@@ -67,9 +84,33 @@ class Container implements ContainerInterface
         return $service;
     }
 
-    private function resolveClassDependencies($constructorParams)
+    private function resolveClassDependencies(array $reflectionConstructorParams): array
     {
+        // 1. Initialize empty dependencies array ( required by newInstanceArgs)
+        $classDependencies = [];
 
+        // 2. Try to locate and instanciate each parameter
+        /** @var ReflectionParameter $parameter */
+        foreach($reflectionConstructorParams as $parameter) {
+            // Get the parameters ReflecationNamedType as $serviceType
+            $serviceType = $parameter->getType();
+
+            // Try to instanciate using $serviceType's name
+            if($serviceType->allowsNull() === true) {
+                continue;
+            }
+
+            if(!class_exists($serviceType->getName())) {
+                $classDependencies[] = $this->defaultPrimaryTypes[$serviceType->getName()];
+                continue;
+            }
+
+            $service = $this->get($serviceType->getName());
+
+            $classDependencies[] = $service;
+        }
+
+        return $classDependencies;
     }
 
     public function has(string $id): bool

@@ -5,8 +5,6 @@ namespace Cascata\Framework\Tests;
 use Cascata\Framework\Container\Container;
 use Cascata\Framework\Container\Exceptions\ContainerException;
 use PHPUnit\Framework\TestCase;
-use Psr\Container\ContainerExceptionInterface;
-use Psr\Container\NotFoundExceptionInterface;
 
 class ContainerTest extends TestCase
 {
@@ -25,8 +23,6 @@ class ContainerTest extends TestCase
     }
 
     /**
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
      * @throws ContainerException
      * @test
      */
@@ -54,8 +50,6 @@ class ContainerTest extends TestCase
     }
 
     /**
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
      * @throws ContainerException
      * @test
      */
@@ -67,6 +61,9 @@ class ContainerTest extends TestCase
 
         $dependantService = $container->get("dependant-service");
 
-        $this->assertInstanceOf(\DependencyClass::class, $dependantService->getDependency());
+        $dependencyService = $dependantService->getDependency();
+
+        $this->assertInstanceOf(DependencyClass::class, $dependencyService);
+        $this->assertInstanceOf(SubDependencyClass::class, $dependencyService->getSubDependency());
     }
 }

@@ -12,18 +12,25 @@
             "dist": {
                 "type": "path",
                 "url": "framework",
-                "reference": "297f19aea63af3228c2e1ceb207ffcdc00038103"
+                "reference": "24264df0d10b073ab1a596aee75b4a77323bf079"
             },
             "require": {
-                "nikic/fast-route": "^1.3"
+                "nikic/fast-route": "^1.3",
+                "psr/container": "^2.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "^10.4",
                 "symfony/var-dumper": "^6.3"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Cascata\\Framework\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Cascata\\Framework\\Tests\\": "tests"
                 }
             },
             "license": [
@@ -89,6 +96,60 @@
                 "source": "https://github.com/nikic/FastRoute/tree/v1.x"
             },
             "time": "2019-12-20T12:15:33+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container"
+            },
+            "time": "2023-09-22T11:11:30+00:00"
         }
     ],
     "packages-dev": [
