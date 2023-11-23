@@ -13,19 +13,6 @@ class Router implements RouterInterface
 {
     private Dispatcher $dispatcher;
 
-    public function __construct()
-    {
-        // Creates a dispatcher
-        $this->dispatcher = simpleDispatcher(function (RouteCollector $routeCollector) {
-            include BASE_PATH . "/routes/web.php";
-
-            /** @var RouteGrouper $routeGrouper */
-            foreach($routeGrouper->getRoutes() as $route) {
-                $routeCollector->addRoute(...$route);
-            }
-        });
-    }
-
     /**
      * @throws HttpException
      * @throws HttpRequestMethodException
@@ -68,5 +55,16 @@ class Router implements RouterInterface
                 $excepetion->setStatusCode(404);
                 throw $excepetion;
         }
+    }
+
+    public function setRoutes(RouteGrouper $routeGrouper): void
+    {
+        // Creates a dispatcher
+        $this->dispatcher = simpleDispatcher(function (RouteCollector $routeCollector) use ($routeGrouper) {
+            foreach($routeGrouper->getRoutes() as $route) {
+                $routeCollector->addRoute(...$route);
+            }
+        });
+        dd($routeGrouper->getRoutes());
     }
 }
