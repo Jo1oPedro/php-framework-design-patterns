@@ -2,6 +2,8 @@
 
 $container = new \League\Container\Container();
 
+$container->delegate(new \League\Container\ReflectionContainer(true));
+
 ## PARAMETERS
 include BASE_PATH . "/routes/web.php";
 
@@ -20,7 +22,8 @@ $container->extend(\Cascata\Framework\Routing\RouterInterface::class)
     ->addMethodCall('setRoutes', [$routeGrouper]);
 
 $container->add(\Cascata\Framework\Http\Kernel::class)
-    ->addArgument(\Cascata\Framework\Routing\RouterInterface::class);
+    ->addArgument(\Cascata\Framework\Routing\RouterInterface::class)
+    ->addArgument($container);
 /** */
 
 return $container;
