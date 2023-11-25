@@ -1,12 +1,16 @@
 <?php
 
+$dotenv = new \Symfony\Component\Dotenv\Dotenv();
+
+$dotenv->load(BASE_PATH . "/.env");
+
 $container = new \League\Container\Container();
 
 $container->delegate(new \League\Container\ReflectionContainer(true));
 
 ## PARAMETERS
 include BASE_PATH . "/routes/web.php";
-$appEnv = 'dev';
+$appEnv = $_SERVER['APP_ENV'];
 
 $container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
 
