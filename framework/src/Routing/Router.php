@@ -53,7 +53,7 @@ class Router implements RouterInterface
                 $excepetion->setStatusCode(405);
                 throw $excepetion;
             default:
-                $excepetion = new HttpException("Not found");
+                $excepetion = new HttpException("Route Not found");
                 $excepetion->setStatusCode(404);
                 throw $excepetion;
         }

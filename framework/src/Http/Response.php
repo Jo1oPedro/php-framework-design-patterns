@@ -7,7 +7,7 @@ class Response
     public const HTTP_INTERNAL_SERVER_ERROR = 500;
 
     public function __construct(
-        private ?string $content,
+        private ?string $content = null,
         private int $status = 200,
         private array $headers = []
     ) {
@@ -17,5 +17,11 @@ class Response
     public function send(): void
     {
         echo $this->content;
+    }
+
+    public function setContent(?string $content): Response
+    {
+        $this->content = $content;
+        return $this;
     }
 }

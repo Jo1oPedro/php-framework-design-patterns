@@ -2,22 +2,22 @@
 
 namespace App\Controller;
 
+use Cascata\Framework\Controller\AbstractController;
 use Cascata\Framework\Http\Response;
+use Twig\Environment;
 
-class HomeController
+class HomeController extends AbstractController
 {
     public function __construct(
         private readonly PostsController $postsController,
-        private string $dale = "1"
     ) {
-        //dd($dale);
-        //dd($postsController);
     }
 
     public function index(): Response
     {
-        $content = '<h1>Hello world</h1>';
-
-        return new Response($content);
+        $name = 'cascata';
+        return $this->render("teste.php", [
+            'name' => $name
+        ]);
     }
 }
