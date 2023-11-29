@@ -1,13 +1,16 @@
 #!/usr/bin/env php
+<?php
 
 // set a base path
-
+define("BASE_PATH", __DIR__);
 // require autoloading
-
+require_once BASE_PATH . "/vendor/autoload.php";
 // require the container
-
+/** @var \Psr\Container\ContainerInterface $container */
+$container = require_once BASE_PATH . "/config/services.php";
 // Get the console kernel from the container
-
+$kernel = $container->get(\Cascata\Framework\Console\Kernel::class);
 // call a handle method on the kernel, return the console application status
-
+$status = $kernel->handle();
 // exit with the status
+exit($status);

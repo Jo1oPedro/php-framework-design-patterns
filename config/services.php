@@ -17,6 +17,11 @@ $container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument
 
 $databaseUrl = 'sqlite:///' . BASE_PATH . '/var/db.sqlite';
 
+$container->add(
+    'base-commands-namespace',
+    new \League\Container\Argument\Literal\StringArgument('Cascata\\Framework\\Console\\Command\\')
+);
+
 ## SERVICES
 /**
  * Esse bloco corresponde a autowiring de uma Router responsável pelo processamento das rotas
@@ -35,6 +40,12 @@ $container->add(\Cascata\Framework\Http\Kernel::class)
     ->addArgument(\Cascata\Framework\Routing\RouterInterface::class)
     ->addArgument($container);
 /** */
+
+$container->add(\Cascata\Framework\Console\Kernel::class)
+    ->addArguments([$container, \Cascata\Framework\Console\Application::class]);
+
+$container->add(\Cascata\Framework\Console\Application::class)
+    ->addArgument($container);
 
 $container->addShared('filesystem-loader', \Twig\Loader\FilesystemLoader::class)
     ->addArgument(new \League\Container\Argument\Literal\StringArgument($templatesPath));
