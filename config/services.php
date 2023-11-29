@@ -15,7 +15,8 @@ $templatesPath = BASE_PATH . "/templates";
 
 $container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
 
-$databaseUrl = 'sqlite:///' . BASE_PATH . '/var/db.sqlite';
+//$databaseUrl = 'sqlite:///' . BASE_PATH . '/var/db.sqlite';
+$databaseUrl = 'mysql://root:@127.0.0.1:3306/codejr';
 
 $container->add(
     'base-commands-namespace',
@@ -66,5 +67,10 @@ $container->add(\Cascata\Framework\Dbal\ConnectionFactory::class)
 $container->addShared(\Doctrine\DBAL\Connection::class, function() use($container): \Doctrine\DBAL\Connection {
     return $container->get(\Cascata\Framework\Dbal\ConnectionFactory::class)->create();
 });
+
+$container->add(
+    'database:migrations:migrate',
+    \Cascata\Framework\Console\Command\MigrateDatabase::class
+)->addArgument(\Doctrine\DBAL\Connection::class);
 
 return $container;
