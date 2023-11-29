@@ -20,4 +20,12 @@ class HomeController extends AbstractController
             'name' => $name
         ]);
     }
+
+    public function index2(): Response
+    {
+        $name = 'cascata';
+        return $this->renderTwig("home.html.twig", [
+            'name' => $name
+        ]);
+    }
 }

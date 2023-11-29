@@ -1,0 +1,7018 @@
+version: 1
+creator: xdebug 3.2.2 (PHP 8.1.10)
+cmd: C:\xampp\htdocs\frameworkPatterns\public\index.php
+part: 1
+positions: line
+
+events: Time_(10ns) Memory_(bytes)
+
+fl=(1) php:internal
+fn=(1) php::dirname
+11 240 80
+
+fl=(1)
+fn=(2) php::define
+11 240 24
+
+fl=(2) C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_real.php
+fn=(3) require_once::C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_real.php
+1 50 0
+
+fl=(3) C:\xampp\htdocs\frameworkPatterns\vendor\composer\platform_check.php
+fn=(4) require::C:\xampp\htdocs\frameworkPatterns\vendor\composer\platform_check.php
+1 120 0
+
+fl=(1)
+fn=(5) php::spl_autoload_register
+27 360 408
+
+fl=(4) C:\xampp\htdocs\frameworkPatterns\vendor\composer\ClassLoader.php
+fn=(6) require::C:\xampp\htdocs\frameworkPatterns\vendor\composer\ClassLoader.php
+1 70 0
+
+fl=(2)
+fn=(7) ComposerAutoloaderInitec06aa83e1f3180db304832df2a98c37::loadClassLoader
+9 52640 48064
+cfl=(4)
+cfn=(6)
+calls=1 0 0
+12 70 0
+
+fl=(1)
+fn=(1)
+28 180 80
+
+fl=(1)
+fn=(8) php::Closure::bind
+577 80 392
+
+fl=(4)
+fn=(9) Composer\Autoload\ClassLoader::initializeIncludeClosure
+561 460 32
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+577 80 392
+
+fl=(4)
+fn=(10) Composer\Autoload\ClassLoader->__construct
+106 410 0
+cfl=(4)
+cfn=(9)
+calls=1 0 0
+109 540 424
+
+fl=(1)
+fn=(11) php::spl_autoload_unregister
+29 180 0
+
+fl=(5) C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_static.php
+fn=(12) require::C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_static.php
+1 40 0
+
+fl=(1)
+fn=(8)
+116 50 920
+
+fl=(5)
+fn=(13) Composer\Autoload\ComposerStaticInitec06aa83e1f3180db304832df2a98c37::getInitializer
+109 320 0
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+116 50 920
+
+fl=(5)
+fn=(14) Composer\Autoload\ClassLoader::Composer\Autoload\{closure:C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_static.php:111-116}
+111 210 0
+
+fl=(1)
+fn=(5)
+389 90 32
+
+fl=(4)
+fn=(15) Composer\Autoload\ClassLoader->register
+387 1280 376
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+389 90 32
+
+fl=(1)
+fn=(8)
+43 20 392
+
+fl=(1)
+fn=(16) php::function_exists
+14 40 0
+
+fl=(1)
+fn=(16)
+17 40 0
+
+fl=(1)
+fn=(16)
+20 20 0
+
+fl=(1)
+fn=(16)
+23 20 0
+
+fl=(1)
+fn=(16)
+26 10 0
+
+fl=(1)
+fn=(16)
+29 1 0
+
+fl=(1)
+fn=(16)
+32 10 0
+
+fl=(1)
+fn=(16)
+35 10 0
+
+fl=(1)
+fn=(16)
+38 60 0
+
+fl=(1)
+fn=(16)
+41 10 0
+
+fl=(1)
+fn=(16)
+44 10 0
+
+fl=(1)
+fn=(16)
+47 10 0
+
+fl=(1)
+fn=(16)
+50 30 0
+
+fl=(1)
+fn=(16)
+53 10 0
+
+fl=(1)
+fn=(16)
+56 10 0
+
+fl=(1)
+fn=(16)
+59 20 0
+
+fl=(1)
+fn=(16)
+62 10 0
+
+fl=(1)
+fn=(16)
+65 10 0
+
+fl=(1)
+fn=(16)
+68 40 0
+
+fl=(1)
+fn=(16)
+71 20 0
+
+fl=(1)
+fn=(16)
+74 10 0
+
+fl=(1)
+fn=(16)
+77 10 0
+
+fl=(1)
+fn=(16)
+80 20 0
+
+fl=(1)
+fn=(16)
+83 10 0
+
+fl=(1)
+fn=(16)
+86 1 0
+
+fl=(1)
+fn=(16)
+89 10 0
+
+fl=(1)
+fn=(16)
+92 1 0
+
+fl=(1)
+fn=(16)
+95 10 0
+
+fl=(1)
+fn=(16)
+98 10 0
+
+fl=(1)
+fn=(16)
+101 20 0
+
+fl=(1)
+fn=(16)
+104 10 0
+
+fl=(1)
+fn=(16)
+107 10 0
+
+fl=(1)
+fn=(16)
+110 10 0
+
+fl=(1)
+fn=(16)
+114 1 0
+
+fl=(1)
+fn=(16)
+118 10 0
+
+fl=(1)
+fn=(16)
+121 10 0
+
+fl=(1)
+fn=(16)
+124 10 0
+
+fl=(1)
+fn=(16)
+127 10 0
+
+fl=(1)
+fn=(16)
+131 10 0
+
+fl=(1)
+fn=(17) php::extension_loaded
+135 110 0
+
+fl=(6) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-mbstring\bootstrap80.php
+fn=(18) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-mbstring\bootstrap80.php
+1 2506 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+14 40 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+17 40 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+20 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+23 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+26 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+29 1 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+32 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+35 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+38 60 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+41 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+44 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+47 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+50 30 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+53 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+56 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+59 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+62 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+65 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+68 40 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+71 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+74 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+77 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+80 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+83 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+86 1 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+89 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+92 1 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+95 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+98 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+101 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+104 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+107 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+110 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+114 1 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+118 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+121 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+124 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+127 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+131 10 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+135 110 0
+
+fl=(7) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-mbstring\bootstrap.php
+fn=(19) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-mbstring\bootstrap.php
+1 30690 1280
+cfl=(6)
+cfn=(18)
+calls=1 0 0
+15 3190 0
+
+fl=(2)
+fn=(20) {closure:C:\xampp\htdocs\frameworkPatterns\vendor\composer\autoload_real.php:37-43}
+37 31790 1592
+cfl=(7)
+cfn=(19)
+calls=1 0 0
+41 33880 1280
+
+fl=(1)
+fn=(16)
+14 40 0
+
+fl=(1)
+fn=(16)
+17 30 0
+
+fl=(1)
+fn=(16)
+20 10 0
+
+fl=(1)
+fn=(16)
+23 20 0
+
+fl=(1)
+fn=(16)
+26 10 0
+
+fl=(1)
+fn=(16)
+29 10 0
+
+fl=(1)
+fn=(16)
+32 20 0
+
+fl=(1)
+fn=(16)
+35 10 0
+
+fl=(1)
+fn=(16)
+38 50 0
+
+fl=(1)
+fn=(16)
+41 20 0
+
+fl=(1)
+fn=(16)
+44 70 0
+
+fl=(8) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-ctype\bootstrap80.php
+fn=(21) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-ctype\bootstrap80.php
+1 820 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+14 40 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+17 30 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+20 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+23 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+26 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+29 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+32 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+35 10 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+38 50 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+41 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+44 70 0
+
+fl=(9) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-ctype\bootstrap.php
+fn=(22) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-ctype\bootstrap.php
+1 13050 112
+cfl=(8)
+cfn=(21)
+calls=1 0 0
+15 1110 0
+
+fl=(2)
+fn=(20)
+37 23330 704
+cfl=(9)
+cfn=(22)
+calls=1 0 0
+41 14160 112
+
+fl=(10) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-php80\bootstrap.php
+fn=(23) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\polyfill-php80\bootstrap.php
+1 40 0
+
+fl=(2)
+fn=(20)
+37 12610 336
+cfl=(10)
+cfn=(23)
+calls=1 0 0
+41 40 0
+
+fl=(1)
+fn=(16)
+5 80 0
+
+fl=(11) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\functions.php
+fn=(24) require::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\functions.php
+1 340 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+5 80 0
+
+fl=(2)
+fn=(20)
+37 11820 9104
+cfl=(11)
+cfn=(24)
+calls=1 0 0
+41 420 0
+
+fl=(1)
+fn=(16)
+12 50 0
+
+fl=(12) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\deprecation-contracts\function.php
+fn=(25) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\deprecation-contracts\function.php
+1 140 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+12 50 0
+
+fl=(2)
+fn=(20)
+37 10320 2336
+cfl=(12)
+cfn=(25)
+calls=1 0 0
+41 190 0
+
+fl=(1)
+fn=(16)
+15 20 0
+
+fl=(1)
+fn=(16)
+45 80 0
+
+fl=(13) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\var-dumper\Resources\functions\dump.php
+fn=(26) require::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\var-dumper\Resources\functions\dump.php
+1 270 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+15 20 0
+cfl=(1)
+cfn=(16)
+calls=1 0 0
+45 80 0
+
+fl=(2)
+fn=(20)
+37 17810 6048
+cfl=(13)
+cfn=(26)
+calls=1 0 0
+41 370 0
+
+fl=(2)
+fn=(27) ComposerAutoloaderInitec06aa83e1f3180db304832df2a98c37::getLoader
+19 27220 16800
+cfl=(3)
+cfn=(4)
+calls=1 0 0
+25 120 0
+cfl=(1)
+cfn=(5)
+calls=1 0 0
+27 360 408
+cfl=(2)
+cfn=(7)
+calls=1 0 0
+28 52710 48064
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+28 180 80
+cfl=(4)
+cfn=(10)
+calls=1 0 0
+28 950 424
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+29 180 0
+cfl=(5)
+cfn=(12)
+calls=1 0 0
+31 40 0
+cfl=(5)
+cfn=(13)
+calls=1 0 0
+32 370 920
+cfl=(5)
+cfn=(14)
+calls=1 0 0
+32 210 0
+cfl=(4)
+cfn=(15)
+calls=1 0 0
+34 1370 408
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+43 20 392
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 65670 2872
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 37490 816
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 12650 336
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 12240 9104
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 10510 2336
+cfl=(2)
+cfn=(20)
+calls=1 0 0
+45 18180 6048
+
+fl=(14) C:\xampp\htdocs\frameworkPatterns\vendor\autoload.php
+fn=(28) require_once::C:\xampp\htdocs\frameworkPatterns\vendor\autoload.php
+1 17600 7936
+cfl=(2)
+cfn=(3)
+calls=1 0 0
+23 50 0
+cfl=(2)
+cfn=(27)
+calls=1 0 0
+25 240470 88120
+
+fl=(1)
+fn=(29) php::strtr
+495 80 56
+
+fl=(1)
+fn=(30) php::strrpos
+500 40 0
+
+fl=(1)
+fn=(31) php::substr
+501 30 56
+
+fl=(1)
+fn=(31)
+504 10 40
+
+fl=(1)
+fn=(32) php::file_exists
+506 6210 0
+
+fl=(4)
+fn=(33) Composer\Autoload\ClassLoader->findFileWithExtension
+492 1610 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 80 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 40 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 30 56
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 6210 0
+
+fl=(4)
+fn=(34) Composer\Autoload\ClassLoader->findFile
+442 730 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 7980 112
+
+fl=(15) C:\xampp\htdocs\frameworkPatterns\vendor\symfony\dotenv\Dotenv.php
+fn=(35) include::C:\xampp\htdocs\frameworkPatterns\vendor\symfony\dotenv\Dotenv.php
+1 100 0
+
+fl=(4)
+fn=(36) Composer\Autoload\{closure:C:\xampp\htdocs\frameworkPatterns\vendor\composer\ClassLoader.php:575-577}
+575 49820 95880
+cfl=(15)
+cfn=(35)
+calls=1 0 0
+576 100 0
+
+fl=(4)
+fn=(37) Composer\Autoload\ClassLoader->loadClass
+423 880 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 8710 112
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 49920 95880
+
+fl=(15)
+fn=(38) Symfony\Component\Dotenv\Dotenv->__construct
+43 200 0
+
+fl=(1)
+fn=(39) php::is_readable
+552 3470 0
+
+fl=(1)
+fn=(40) php::is_dir
+552 1840 0
+
+fl=(1)
+fn=(41) php::file_get_contents
+556 3680 160
+
+fl=(1)
+fn=(42) php::str_replace
+231 110 40
+
+fl=(1)
+fn=(43) php::preg_match
+416 420 376
+
+fl=(1)
+fn=(44) php::substr_count
+541 30 0
+
+fl=(15)
+fn=(45) Symfony\Component\Dotenv\Dotenv->moveCursor
+538 220 0
+cfl=(1)
+cfn=(44)
+calls=1 0 0
+541 30 0
+
+fl=(15)
+fn=(46) Symfony\Component\Dotenv\Dotenv->skipEmptyLines
+414 490 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+416 420 376
+cfl=(15)
+cfn=(45)
+calls=1 0 0
+417 250 0
+
+fl=(1)
+fn=(43)
+270 100 440
+
+fl=(1)
+fn=(44)
+541 10 0
+
+fl=(15)
+fn=(45)
+538 110 0
+cfl=(1)
+cfn=(44)
+calls=1 0 0
+541 10 0
+
+fl=(15)
+fn=(47) Symfony\Component\Dotenv\Dotenv->lexVarname
+267 430 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+270 100 440
+cfl=(15)
+cfn=(45)
+calls=1 0 0
+273 120 0
+
+fl=(1)
+fn=(43)
+297 130 56
+
+fl=(1)
+fn=(48) php::explode
+308 50 376
+
+fl=(1)
+fn=(49) php::array_flip
+308 50 376
+
+fl=(1)
+fn=(50) php::rtrim
+365 60 0
+
+fl=(1)
+fn=(51) php::str_contains
+472 20 0
+
+fl=(15)
+fn=(52) Symfony\Component\Dotenv\Dotenv->resolveVariables
+470 190 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+472 20 0
+
+fl=(1)
+fn=(51)
+423 10 0
+
+fl=(15)
+fn=(53) Symfony\Component\Dotenv\Dotenv->resolveCommands
+421 70 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+423 10 0
+
+fl=(1)
+fn=(42)
+369 20 0
+
+fl=(1)
+fn=(43)
+371 60 0
+
+fl=(1)
+fn=(43)
+416 30 376
+
+fl=(1)
+fn=(44)
+541 10 0
+
+fl=(15)
+fn=(45)
+538 80 0
+cfl=(1)
+cfn=(44)
+calls=1 0 0
+541 10 0
+
+fl=(15)
+fn=(46)
+414 190 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+416 30 376
+cfl=(15)
+cfn=(45)
+calls=1 0 0
+417 90 0
+
+fl=(15)
+fn=(54) Symfony\Component\Dotenv\Dotenv->lexValue
+295 1810 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+297 130 56
+cfl=(1)
+cfn=(48)
+calls=1 0 0
+308 50 376
+cfl=(1)
+cfn=(49)
+calls=1 0 0
+308 50 376
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+365 60 0
+cfl=(15)
+cfn=(52)
+calls=1 0 0
+367 210 0
+cfl=(15)
+cfn=(53)
+calls=1 0 0
+368 80 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+369 20 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+371 60 0
+cfl=(15)
+cfn=(46)
+calls=1 0 0
+383 310 0
+
+fl=(15)
+fn=(55) Symfony\Component\Dotenv\Dotenv->parse
+228 1380 296
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+231 110 40
+cfl=(15)
+cfn=(46)
+calls=1 0 0
+239 1160 0
+cfl=(15)
+cfn=(47)
+calls=1 0 0
+244 650 32
+cfl=(15)
+cfn=(54)
+calls=1 0 0
+249 2780 32
+
+fl=(1)
+fn=(48)
+182 10 376
+
+fl=(1)
+fn=(49)
+182 10 376
+
+fl=(1)
+fn=(56) php::str_starts_with
+185 10 0
+
+fl=(1)
+fn=(57) php::array_keys
+211 30 376
+
+fl=(1)
+fn=(58) php::implode
+211 60 0
+
+fl=(15)
+fn=(59) Symfony\Component\Dotenv\Dotenv->populate
+179 930 208
+cfl=(1)
+cfn=(48)
+calls=1 0 0
+182 10 376
+cfl=(1)
+cfn=(49)
+calls=1 0 0
+182 10 376
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+185 10 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+211 30 376
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+211 60 0
+
+fl=(15)
+fn=(60) Symfony\Component\Dotenv\Dotenv->doLoad
+549 1110 0
+cfl=(1)
+cfn=(39)
+calls=1 0 0
+552 3470 0
+cfl=(1)
+cfn=(40)
+calls=1 0 0
+552 1840 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+556 3680 160
+cfl=(15)
+cfn=(55)
+calls=1 0 0
+556 6080 400
+cfl=(15)
+cfn=(59)
+calls=1 0 0
+556 1050 1336
+
+fl=(15)
+fn=(61) Symfony\Component\Dotenv\Dotenv->load
+81 350 376
+cfl=(15)
+cfn=(60)
+calls=1 0 0
+83 17230 1520
+
+fl=(1)
+fn=(29)
+495 20 56
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 40
+
+fl=(1)
+fn=(32)
+506 1790 0
+
+fl=(4)
+fn=(33)
+492 640 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1790 0
+
+fl=(4)
+fn=(34)
+442 290 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2490 112
+
+fl=(1)
+fn=(29)
+495 40 80
+
+fl=(1)
+fn=(30)
+500 30 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 2060 0
+
+fl=(4)
+fn=(33)
+492 570 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 40 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 30 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2060 0
+
+fl=(4)
+fn=(34)
+442 340 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2720 160
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 2850 0
+
+fl=(4)
+fn=(33)
+492 480 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2850 0
+
+fl=(4)
+fn=(34)
+442 280 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 3380 128
+
+fl=(16) C:\xampp\htdocs\frameworkPatterns\vendor\psr\container\src\ContainerInterface.php
+fn=(62) include::C:\xampp\htdocs\frameworkPatterns\vendor\psr\container\src\ContainerInterface.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3550 2296
+cfl=(16)
+cfn=(62)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 470 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3660 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3570 2296
+
+fl=(17) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\DefinitionContainerInterface.php
+fn=(63) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\DefinitionContainerInterface.php
+1 380 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+12 7700 2296
+
+fl=(4)
+fn=(36)
+575 5370 2664
+cfl=(17)
+cfn=(63)
+calls=1 0 0
+576 8080 2224
+
+fl=(4)
+fn=(37)
+423 490 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3060 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 13450 4888
+
+fl=(18) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Container.php
+fn=(64) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Container.php
+1 620 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+15 17000 4888
+
+fl=(4)
+fn=(36)
+575 18210 27512
+cfl=(18)
+cfn=(64)
+calls=1 0 0
+576 17620 4728
+
+fl=(4)
+fn=(37)
+423 540 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2780 112
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 35830 32240
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 1 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1680 0
+
+fl=(4)
+fn=(33)
+492 518 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1680 0
+
+fl=(4)
+fn=(34)
+442 270 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2250 160
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 1430 0
+
+fl=(4)
+fn=(33)
+492 390 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1430 0
+
+fl=(4)
+fn=(34)
+442 230 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 1870 128
+
+fl=(19) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ContainerAwareTrait.php
+fn=(65) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ContainerAwareTrait.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 4710 3024
+cfl=(19)
+cfn=(65)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 400 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2100 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 4730 3024
+
+fl=(1)
+fn=(29)
+495 20 96
+
+fl=(1)
+fn=(30)
+500 70 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 80
+
+fl=(1)
+fn=(32)
+506 2080 0
+
+fl=(4)
+fn=(33)
+492 14030 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 96
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 70 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 80
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2080 0
+
+fl=(4)
+fn=(34)
+442 330 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 16240 160
+
+fl=(1)
+fn=(29)
+495 10 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 1390 0
+
+fl=(4)
+fn=(33)
+492 450 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 10 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1390 0
+
+fl=(4)
+fn=(34)
+442 260 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 1880 128
+
+fl=(20) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ContainerAwareInterface.php
+fn=(66) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ContainerAwareInterface.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3150 920
+cfl=(20)
+cfn=(66)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 450 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2140 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3170 920
+
+fl=(21) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionAggregateInterface.php
+fn=(67) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionAggregateInterface.php
+1 460 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+10 5760 920
+
+fl=(4)
+fn=(36)
+575 5790 3792
+cfl=(21)
+cfn=(67)
+calls=1 0 0
+576 6220 784
+
+fl=(4)
+fn=(37)
+423 550 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 16570 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 12010 4576
+
+fl=(22) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionAggregate.php
+fn=(68) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionAggregate.php
+1 900 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+11 7230 3024
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+11 29130 4576
+
+fl=(4)
+fn=(36)
+575 9850 13568
+cfl=(22)
+cfn=(68)
+calls=1 0 0
+576 37260 7440
+
+fl=(4)
+fn=(37)
+423 360 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2520 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 47110 21008
+
+fl=(1)
+fn=(69) php::array_filter
+24 50 0
+
+fl=(22)
+fn=(70) League\Container\Definition\DefinitionAggregate->__construct
+20 340 0
+cfl=(1)
+cfn=(69)
+calls=1 0 0
+24 50 0
+
+fl=(1)
+fn=(29)
+495 20 96
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 80
+
+fl=(1)
+fn=(32)
+506 1710 0
+
+fl=(4)
+fn=(33)
+492 500 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 96
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 80
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1710 0
+
+fl=(4)
+fn=(34)
+442 280 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2280 160
+
+fl=(1)
+fn=(29)
+495 30 96
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 1 80
+
+fl=(1)
+fn=(32)
+506 1730 0
+
+fl=(4)
+fn=(33)
+492 539 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 96
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 1 80
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1730 0
+
+fl=(4)
+fn=(34)
+442 290 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2340 160
+
+fl=(23) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ServiceProvider\ServiceProviderAggregateInterface.php
+fn=(71) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ServiceProvider\ServiceProviderAggregateInterface.php
+1 90 0
+
+fl=(4)
+fn=(36)
+575 4110 1776
+cfl=(23)
+cfn=(71)
+calls=1 0 0
+576 90 0
+
+fl=(4)
+fn=(37)
+423 390 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2630 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 4200 1640
+
+fl=(24) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ServiceProvider\ServiceProviderAggregate.php
+fn=(72) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ServiceProvider\ServiceProviderAggregate.php
+1 400 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+11 7220 1640
+
+fl=(4)
+fn=(36)
+575 8080 73896
+cfl=(24)
+cfn=(72)
+calls=1 0 0
+576 7620 1480
+
+fl=(4)
+fn=(37)
+423 380 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2560 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 15700 75376
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1730 0
+
+fl=(4)
+fn=(33)
+492 469 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1730 0
+
+fl=(4)
+fn=(34)
+442 330 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2260 160
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 80
+
+fl=(1)
+fn=(32)
+506 1570 0
+
+fl=(4)
+fn=(33)
+492 548 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 80
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1570 0
+
+fl=(4)
+fn=(34)
+442 260 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2170 160
+
+fl=(25) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorAggregateInterface.php
+fn=(73) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorAggregateInterface.php
+1 50 0
+
+fl=(4)
+fn=(36)
+575 3650 1480
+cfl=(25)
+cfn=(73)
+calls=1 0 0
+576 50 0
+
+fl=(4)
+fn=(37)
+423 420 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2430 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3700 1344
+
+fl=(26) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorAggregate.php
+fn=(74) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorAggregate.php
+1 390 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+10 6550 1344
+
+fl=(4)
+fn=(36)
+575 5370 4160
+cfl=(26)
+cfn=(74)
+calls=1 0 0
+576 6940 1216
+
+fl=(4)
+fn=(37)
+423 350 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2590 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 12310 5376
+
+fl=(19)
+fn=(75) League\Container\Definition\DefinitionAggregate->setContainer
+17 130 0
+
+fl=(19)
+fn=(76) League\Container\ServiceProvider\ServiceProviderAggregate->setContainer
+17 20 0
+
+fl=(19)
+fn=(77) League\Container\Inflector\InflectorAggregate->setContainer
+17 20 0
+
+fl=(18)
+fn=(78) League\Container\Container->__construct
+42 1680 256
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+47 49990 21008
+cfl=(22)
+cfn=(70)
+calls=1 0 0
+47 390 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+48 18640 75376
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+49 15250 5376
+cfl=(19)
+cfn=(75)
+calls=1 0 0
+52 130 0
+cfl=(19)
+cfn=(76)
+calls=1 0 0
+56 20 0
+cfl=(19)
+cfn=(77)
+calls=1 0 0
+60 20 0
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 1540 0
+
+fl=(4)
+fn=(33)
+492 369 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1540 0
+
+fl=(4)
+fn=(34)
+442 240 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 1950 128
+
+fl=(1)
+fn=(29)
+495 30 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 2000 0
+
+fl=(4)
+fn=(33)
+492 640 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2000 0
+
+fl=(4)
+fn=(34)
+442 300 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2720 160
+
+fl=(27) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentResolverTrait.php
+fn=(79) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentResolverTrait.php
+1 40 0
+
+fl=(4)
+fn=(36)
+575 21220 15440
+cfl=(27)
+cfn=(79)
+calls=1 0 0
+576 40 0
+
+fl=(4)
+fn=(37)
+423 570 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3020 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 21260 15440
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 2310 0
+
+fl=(4)
+fn=(33)
+492 779 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2310 0
+
+fl=(4)
+fn=(34)
+442 380 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 3150 160
+
+fl=(28) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentResolverInterface.php
+fn=(80) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentResolverInterface.php
+1 110 0
+
+fl=(4)
+fn=(36)
+575 5730 1528
+cfl=(28)
+cfn=(80)
+calls=1 0 0
+576 110 0
+
+fl=(4)
+fn=(37)
+423 610 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3530 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 5840 1440
+
+fl=(29) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ReflectionContainer.php
+fn=(81) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\ReflectionContainer.php
+1 920 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+15 24850 15440
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+15 9980 1440
+
+fl=(4)
+fn=(36)
+575 13710 16592
+cfl=(29)
+cfn=(81)
+calls=1 0 0
+576 35750 16744
+
+fl=(4)
+fn=(37)
+423 360 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2190 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 49460 33336
+
+fl=(29)
+fn=(82) League\Container\ReflectionContainer->__construct
+30 60 0
+
+fl=(19)
+fn=(83) League\Container\ReflectionContainer->setContainer
+17 50 0
+
+fl=(18)
+fn=(84) League\Container\Container->delegate
+161 310 376
+cfl=(19)
+cfn=(83)
+calls=1 0 0
+166 50 0
+
+fl=(1)
+fn=(29)
+495 30 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 2860 0
+
+fl=(4)
+fn=(33)
+492 830 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2860 0
+
+fl=(4)
+fn=(34)
+442 360 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 3770 160
+
+fl=(30) C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\RouteGrouper.php
+fn=(85) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\RouteGrouper.php
+1 100 0
+
+fl=(4)
+fn=(36)
+575 4740 2008
+cfl=(30)
+cfn=(85)
+calls=1 0 0
+576 100 0
+
+fl=(4)
+fn=(37)
+423 620 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 4130 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 4840 2008
+
+fl=(30)
+fn=(86) Cascata\Framework\Routing\RouteGrouper->addRoute
+14 260 752
+
+fl=(30)
+fn=(86)
+14 50 376
+
+fl=(30)
+fn=(86)
+14 70 376
+
+fl=(30)
+fn=(86)
+14 120 0
+
+fl=(30)
+fn=(86)
+14 10 376
+
+fl=(31) C:\xampp\htdocs\frameworkPatterns\routes\web.php
+fn=(87) include::C:\xampp\htdocs\frameworkPatterns\routes\web.php
+1 1090 440
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+8 9590 2008
+cfl=(30)
+cfn=(86)
+calls=1 0 0
+10 260 752
+cfl=(30)
+cfn=(86)
+calls=1 0 0
+11 50 376
+cfl=(30)
+cfn=(86)
+calls=1 0 0
+12 70 376
+cfl=(30)
+cfn=(86)
+calls=1 0 0
+15 120 0
+cfl=(30)
+cfn=(86)
+calls=1 0 0
+16 10 376
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 10 64
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1780 0
+
+fl=(4)
+fn=(33)
+492 629 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1780 0
+
+fl=(4)
+fn=(34)
+442 320 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2500 160
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 1540 0
+
+fl=(4)
+fn=(33)
+492 480 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1540 0
+
+fl=(4)
+fn=(34)
+442 250 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2090 128
+
+fl=(1)
+fn=(29)
+495 30 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1680 0
+
+fl=(4)
+fn=(33)
+492 598 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1680 0
+
+fl=(4)
+fn=(34)
+442 260 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2340 160
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 1600 0
+
+fl=(4)
+fn=(33)
+492 499 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1600 0
+
+fl=(4)
+fn=(34)
+442 300 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2160 160
+
+fl=(32) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentInterface.php
+fn=(88) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\ArgumentInterface.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3100 1016
+cfl=(32)
+cfn=(88)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 410 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2460 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3120 1016
+
+fl=(33) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\LiteralArgumentInterface.php
+fn=(89) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\LiteralArgumentInterface.php
+1 280 152
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+7 5990 1016
+
+fl=(4)
+fn=(36)
+575 3250 560
+cfl=(33)
+cfn=(89)
+calls=1 0 0
+576 6270 1168
+
+fl=(4)
+fn=(37)
+423 380 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2600 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 9520 1728
+
+fl=(34) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\LiteralArgument.php
+fn=(90) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\LiteralArgument.php
+1 230 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+9 12500 1728
+
+fl=(4)
+fn=(36)
+575 7340 4696
+cfl=(34)
+cfn=(90)
+calls=1 0 0
+576 12730 1568
+
+fl=(4)
+fn=(37)
+423 440 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2340 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 20070 6264
+
+fl=(35) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\Literal\StringArgument.php
+fn=(91) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Argument\Literal\StringArgument.php
+1 460 992
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+9 22850 6264
+
+fl=(4)
+fn=(36)
+575 4490 2496
+cfl=(35)
+cfn=(91)
+calls=1 0 0
+576 23310 7256
+
+fl=(4)
+fn=(37)
+423 380 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2820 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 27800 9752
+
+fl=(1)
+fn=(92) php::gettype
+33 60 0
+
+fl=(34)
+fn=(93) League\Container\Argument\LiteralArgument->__construct
+27 290 0
+cfl=(1)
+cfn=(92)
+calls=1 0 0
+33 60 0
+
+fl=(35)
+fn=(94) League\Container\Argument\Literal\StringArgument->__construct
+11 390 0
+cfl=(34)
+cfn=(93)
+calls=1 0 0
+13 350 0
+
+fl=(1)
+fn=(29)
+495 10 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 1 56
+
+fl=(1)
+fn=(32)
+506 1650 0
+
+fl=(4)
+fn=(33)
+492 478 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 10 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 1 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1650 0
+
+fl=(4)
+fn=(34)
+442 11750 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2170 128
+
+fl=(1)
+fn=(29)
+495 30 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 2140 0
+
+fl=(4)
+fn=(33)
+492 889 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2140 0
+
+fl=(4)
+fn=(34)
+442 380 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 3100 160
+
+fl=(36) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionInterface.php
+fn=(95) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\DefinitionInterface.php
+1 80 0
+
+fl=(4)
+fn=(36)
+575 5630 4456
+cfl=(36)
+cfn=(95)
+calls=1 0 0
+576 80 0
+
+fl=(4)
+fn=(37)
+423 550 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3480 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 5710 4368
+
+fl=(37) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\Definition.php
+fn=(96) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\Definition.php
+1 690 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+18 9740 4368
+
+fl=(4)
+fn=(36)
+575 17690 20472
+cfl=(37)
+cfn=(96)
+calls=1 0 0
+576 10430 4144
+
+fl=(4)
+fn=(37)
+423 440 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 13920 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 28120 24616
+
+fl=(37)
+fn=(97) League\Container\Definition\Definition->__construct
+62 60 0
+
+fl=(37)
+fn=(98) League\Container\Definition\Definition->setAlias
+80 50 0
+
+fl=(22)
+fn=(99) League\Container\Definition\DefinitionAggregate->add
+27 730 568
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+30 42480 24616
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 60 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 50 0
+
+fl=(18)
+fn=(100) League\Container\Container->add
+64 440 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+72 43320 25184
+
+fl=(37)
+fn=(97)
+62 30 0
+
+fl=(37)
+fn=(98)
+80 20 0
+
+fl=(22)
+fn=(99)
+27 270 192
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 30 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 20 0
+
+fl=(18)
+fn=(100)
+64 220 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+72 320 192
+
+fl=(24)
+fn=(101) League\Container\ServiceProvider\ServiceProviderAggregate->getIterator
+54 90 432
+
+fl=(24)
+fn=(101)
+54 20 0
+
+fl=(24)
+fn=(101)
+54 30 0
+
+fl=(24)
+fn=(102) League\Container\ServiceProvider\ServiceProviderAggregate->provides
+43 690 0
+cfl=(24)
+cfn=(101)
+calls=1 0 0
+45 90 432
+cfl=(24)
+cfn=(101)
+calls=1 0 0
+45 20 0
+cfl=(24)
+cfn=(101)
+calls=1 0 0
+45 30 0
+
+fl=(22)
+fn=(103) League\Container\Definition\DefinitionAggregate->getIterator
+113 20 432
+
+fl=(22)
+fn=(103)
+113 20 0
+
+fl=(37)
+fn=(104) League\Container\Definition\Definition->getAlias
+86 20 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(22)
+fn=(105) League\Container\Definition\DefinitionAggregate->has
+44 620 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+
+fl=(22)
+fn=(103)
+113 10 432
+
+fl=(22)
+fn=(103)
+113 20 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(19)
+fn=(106) League\Container\Definition\DefinitionAggregate->getContainer
+32 40 0
+
+fl=(19)
+fn=(107) League\Container\Definition\Definition->setContainer
+17 40 0
+
+fl=(22)
+fn=(108) League\Container\Definition\DefinitionAggregate->getDefinition
+66 700 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 10 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(19)
+cfn=(106)
+calls=1 0 0
+70 40 0
+cfl=(19)
+cfn=(107)
+calls=1 0 0
+70 40 0
+
+fl=(18)
+fn=(109) League\Container\Container->extend
+87 1100 0
+cfl=(24)
+cfn=(102)
+calls=1 0 0
+89 830 0
+cfl=(22)
+cfn=(105)
+calls=1 0 0
+93 690 0
+cfl=(22)
+cfn=(108)
+calls=1 0 0
+94 830 0
+
+fl=(37)
+fn=(110) League\Container\Definition\Definition->addMethodCall
+129 130 752
+
+fl=(37)
+fn=(97)
+62 30 0
+
+fl=(37)
+fn=(98)
+80 10 0
+
+fl=(22)
+fn=(99)
+27 230 192
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 30 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 10 0
+
+fl=(18)
+fn=(100)
+64 220 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+72 270 192
+
+fl=(37)
+fn=(111) League\Container\Definition\Definition->addArgument
+114 80 376
+
+fl=(37)
+fn=(111)
+114 30 0
+
+fl=(37)
+fn=(97)
+62 20 0
+
+fl=(37)
+fn=(98)
+80 10 0
+
+fl=(22)
+fn=(99)
+27 230 192
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 20 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 10 0
+
+fl=(37)
+fn=(112) League\Container\Definition\Definition->setShared
+91 20 0
+
+fl=(22)
+fn=(113) League\Container\Definition\DefinitionAggregate->addShared
+38 300 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+40 260 192
+cfl=(37)
+cfn=(112)
+calls=1 0 0
+41 20 0
+
+fl=(18)
+fn=(114) League\Container\Container->addShared
+75 210 0
+cfl=(22)
+cfn=(113)
+calls=1 0 0
+78 580 192
+
+fl=(1)
+fn=(92)
+33 30 0
+
+fl=(34)
+fn=(93)
+27 190 0
+cfl=(1)
+cfn=(92)
+calls=1 0 0
+33 30 0
+
+fl=(35)
+fn=(94)
+11 270 0
+cfl=(34)
+cfn=(93)
+calls=1 0 0
+13 220 0
+
+fl=(37)
+fn=(111)
+114 20 376
+
+fl=(37)
+fn=(97)
+62 20 0
+
+fl=(37)
+fn=(98)
+80 10 0
+
+fl=(22)
+fn=(99)
+27 220 192
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 20 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 10 0
+
+fl=(37)
+fn=(112)
+91 20 0
+
+fl=(22)
+fn=(113)
+38 260 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+40 250 192
+cfl=(37)
+cfn=(112)
+calls=1 0 0
+41 20 0
+
+fl=(18)
+fn=(114)
+75 170 0
+cfl=(22)
+cfn=(113)
+calls=1 0 0
+78 530 192
+
+fl=(37)
+fn=(111)
+114 20 376
+
+fl=(37)
+fn=(97)
+62 200 0
+
+fl=(37)
+fn=(98)
+80 70 0
+
+fl=(22)
+fn=(99)
+27 1460 192
+cfl=(37)
+cfn=(97)
+calls=1 0 0
+30 200 0
+cfl=(37)
+cfn=(98)
+calls=1 0 0
+33 70 0
+
+fl=(18)
+fn=(100)
+64 1770 0
+cfl=(22)
+cfn=(99)
+calls=1 0 0
+72 1730 192
+
+fl=(1)
+fn=(29)
+495 90 64
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 50 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 6340 0
+
+fl=(4)
+fn=(33)
+492 1470 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 90 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 50 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 6340 0
+
+fl=(4)
+fn=(34)
+442 460 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 8000 128
+
+fl=(1)
+fn=(29)
+495 30 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 1 64
+
+fl=(1)
+fn=(32)
+506 2100 0
+
+fl=(4)
+fn=(33)
+492 737 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 1 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2100 0
+
+fl=(4)
+fn=(34)
+442 350 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2890 160
+
+fl=(38) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorInterface.php
+fn=(115) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\InflectorInterface.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 5440 2200
+cfl=(38)
+cfn=(115)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 540 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3240 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 5460 2200
+
+fl=(39) C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\Inflector.php
+fn=(116) include::C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Inflector\Inflector.php
+1 820 88
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+11 9240 2200
+
+fl=(4)
+fn=(36)
+575 15490 9848
+cfl=(39)
+cfn=(116)
+calls=1 0 0
+576 10060 2288
+
+fl=(4)
+fn=(37)
+423 700 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 8460 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 25550 12136
+
+fl=(39)
+fn=(117) League\Container\Inflector\Inflector->__construct
+36 60 0
+
+fl=(26)
+fn=(118) League\Container\Inflector\InflectorAggregate->add
+19 630 504
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+21 34710 12136
+cfl=(39)
+cfn=(117)
+calls=1 0 0
+21 60 0
+
+fl=(18)
+fn=(119) League\Container\Container->inflector
+156 390 0
+cfl=(26)
+cfn=(118)
+calls=1 0 0
+158 35400 12640
+
+fl=(39)
+fn=(120) League\Container\Inflector\Inflector->invokeMethod
+47 90 376
+
+fl=(40) C:\xampp\htdocs\frameworkPatterns\config\services.php
+fn=(121) require::C:\xampp\htdocs\frameworkPatterns\config\services.php
+1 12040 3784
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+3 59510 95880
+cfl=(15)
+cfn=(38)
+calls=1 0 0
+3 200 0
+cfl=(15)
+cfn=(61)
+calls=1 0 0
+5 17580 1896
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+7 39150 32240
+cfl=(18)
+cfn=(78)
+calls=1 0 0
+7 86120 102016
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+9 52010 33336
+cfl=(29)
+cfn=(82)
+calls=1 0 0
+9 60 0
+cfl=(18)
+cfn=(84)
+calls=1 0 0
+9 360 376
+cfl=(31)
+cfn=(87)
+calls=1 0 0
+12 11190 4328
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+16 31000 9752
+cfl=(35)
+cfn=(94)
+calls=1 0 0
+16 740 0
+cfl=(18)
+cfn=(100)
+calls=1 0 0
+16 43760 25184
+cfl=(18)
+cfn=(100)
+calls=1 0 0
+26 540 192
+cfl=(18)
+cfn=(109)
+calls=1 0 0
+29 3450 0
+cfl=(37)
+cfn=(110)
+calls=1 0 0
+30 130 752
+cfl=(18)
+cfn=(100)
+calls=1 0 0
+32 490 192
+cfl=(37)
+cfn=(111)
+calls=1 0 0
+33 80 376
+cfl=(37)
+cfn=(111)
+calls=1 0 0
+34 30 0
+cfl=(18)
+cfn=(114)
+calls=1 0 0
+37 790 192
+cfl=(35)
+cfn=(94)
+calls=1 0 0
+38 490 0
+cfl=(37)
+cfn=(111)
+calls=1 0 0
+38 20 376
+cfl=(18)
+cfn=(114)
+calls=1 0 0
+40 700 192
+cfl=(37)
+cfn=(111)
+calls=1 0 0
+41 20 376
+cfl=(18)
+cfn=(100)
+calls=1 0 0
+43 3500 192
+cfl=(18)
+cfn=(119)
+calls=1 0 0
+45 35790 12640
+cfl=(39)
+cfn=(120)
+calls=1 0 0
+46 90 376
+
+fl=(1)
+fn=(29)
+495 20 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 2110 0
+
+fl=(4)
+fn=(33)
+492 779 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2110 0
+
+fl=(4)
+fn=(34)
+442 340 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2950 128
+
+fl=(41) C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Request.php
+fn=(122) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Request.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 6980 4600
+cfl=(41)
+cfn=(122)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 480 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3290 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 7000 4600
+
+fl=(41)
+fn=(123) Cascata\Framework\Http\Request->__construct
+7 130 0
+
+fl=(41)
+fn=(124) Cascata\Framework\Http\Request::createFromGlobals
+16 250 128
+cfl=(41)
+cfn=(123)
+calls=1 0 0
+18 130 0
+
+fl=(22)
+fn=(103)
+113 50 432
+
+fl=(22)
+fn=(103)
+113 20 0
+
+fl=(37)
+fn=(104)
+86 20 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(22)
+fn=(105)
+44 820 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 50 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+
+fl=(22)
+fn=(103)
+113 20 432
+
+fl=(22)
+fn=(103)
+113 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(37)
+fn=(104)
+86 1 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(19)
+fn=(106)
+32 40 0
+
+fl=(19)
+fn=(107)
+17 80 0
+
+fl=(22)
+fn=(108)
+66 769 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 20 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 1 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(19)
+cfn=(106)
+calls=1 0 0
+70 40 0
+cfl=(19)
+cfn=(107)
+calls=1 0 0
+70 80 0
+
+fl=(1)
+fn=(125) php::is_callable
+161 140 0
+
+fl=(1)
+fn=(126) php::is_string
+174 10 0
+
+fl=(1)
+fn=(29)
+495 20 56
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 40
+
+fl=(1)
+fn=(32)
+506 1780 0
+
+fl=(4)
+fn=(33)
+492 569 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1780 0
+
+fl=(4)
+fn=(34)
+442 320 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2410 128
+
+fl=(42) C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Kernel.php
+fn=(127) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Kernel.php
+1 40 0
+
+fl=(4)
+fn=(36)
+575 13520 6576
+cfl=(42)
+cfn=(127)
+calls=1 0 0
+576 40 0
+
+fl=(4)
+fn=(37)
+423 450 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2730 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 13560 6576
+
+fl=(1)
+fn=(128) php::class_exists
+174 320 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+174 16740 6576
+
+fl=(19)
+fn=(129) League\Container\Definition\Definition->getContainer
+32 40 0
+
+fl=(1)
+fn=(126)
+37 20 0
+
+fl=(22)
+fn=(103)
+113 30 432
+
+fl=(22)
+fn=(103)
+113 20 0
+
+fl=(37)
+fn=(104)
+86 20 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(22)
+fn=(105)
+44 600 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 30 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+
+fl=(18)
+fn=(130) League\Container\Container->has
+133 280 0
+cfl=(22)
+cfn=(105)
+calls=1 0 0
+135 680 0
+
+fl=(22)
+fn=(103)
+113 20 432
+
+fl=(22)
+fn=(103)
+113 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(22)
+fn=(105)
+44 420 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+
+fl=(22)
+fn=(103)
+113 10 432
+
+fl=(22)
+fn=(103)
+113 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(19)
+fn=(106)
+32 20 0
+
+fl=(19)
+fn=(107)
+17 50 0
+
+fl=(22)
+fn=(108)
+66 620 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 10 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 10 0
+cfl=(19)
+cfn=(106)
+calls=1 0 0
+70 20 0
+cfl=(19)
+cfn=(107)
+calls=1 0 0
+70 50 0
+
+fl=(1)
+fn=(125)
+161 100 0
+
+fl=(1)
+fn=(126)
+174 10 0
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 1 48
+
+fl=(1)
+fn=(32)
+506 2260 0
+
+fl=(4)
+fn=(33)
+492 658 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 1 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2260 0
+
+fl=(4)
+fn=(34)
+442 350 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2970 128
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 56
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 1680 0
+
+fl=(4)
+fn=(33)
+492 668 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1680 0
+
+fl=(4)
+fn=(34)
+442 400 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2400 160
+
+fl=(43) C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\RouterInterface.php
+fn=(131) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\RouterInterface.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3970 1096
+cfl=(43)
+cfn=(131)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 420 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2800 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3990 1096
+
+fl=(44) C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\Router.php
+fn=(132) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\Router.php
+1 560 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+13 7210 1096
+
+fl=(4)
+fn=(36)
+575 11080 9920
+cfl=(44)
+cfn=(132)
+calls=1 0 0
+576 7770 928
+
+fl=(4)
+fn=(37)
+423 410 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3320 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 18850 10848
+
+fl=(1)
+fn=(128)
+174 230 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+174 22580 10848
+
+fl=(19)
+fn=(129)
+32 30 0
+
+fl=(27)
+fn=(133) League\Container\Definition\Definition->resolveArguments
+16 190 56
+cfl=(19)
+cfn=(129)
+calls=1 0 0
+19 30 0
+
+fl=(1)
+fn=(134) php::ReflectionClass->__construct
+211 130 0
+
+fl=(1)
+fn=(135) php::ReflectionClass->newInstanceArgs
+212 310 56
+
+fl=(37)
+fn=(136) League\Container\Definition\Definition->resolveClass
+208 1040 0
+cfl=(27)
+cfn=(133)
+calls=1 0 0
+210 220 56
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+211 130 0
+cfl=(1)
+cfn=(135)
+calls=1 0 0
+212 310 56
+
+fl=(1)
+fn=(137) php::is_object
+178 10 0
+
+fl=(19)
+fn=(129)
+32 20 0
+
+fl=(1)
+fn=(126)
+37 1 0
+
+fl=(27)
+fn=(133)
+16 379 408
+cfl=(19)
+cfn=(129)
+calls=1 0 0
+19 20 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+37 1 0
+
+fl=(1)
+fn=(29)
+495 20 56
+
+fl=(1)
+fn=(30)
+500 30 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 2220 0
+
+fl=(4)
+fn=(33)
+492 490 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 30 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 2220 0
+
+fl=(4)
+fn=(34)
+442 230 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2780 128
+
+fl=(45) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteCollector.php
+fn=(138) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteCollector.php
+1 30 0
+
+fl=(4)
+fn=(36)
+575 9420 11680
+cfl=(45)
+cfn=(138)
+calls=1 0 0
+576 30 0
+
+fl=(4)
+fn=(37)
+423 15120 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 3010 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 9450 11680
+
+fl=(1)
+fn=(29)
+495 20 56
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 20 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 1860 0
+
+fl=(4)
+fn=(33)
+492 630 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 56
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 20 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1860 0
+
+fl=(4)
+fn=(34)
+442 330 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2570 128
+
+fl=(1)
+fn=(29)
+495 20 48
+
+fl=(1)
+fn=(30)
+500 50 0
+
+fl=(1)
+fn=(31)
+501 50 40
+
+fl=(1)
+fn=(31)
+504 40 40
+
+fl=(1)
+fn=(32)
+506 1770 0
+
+fl=(4)
+fn=(33)
+492 670 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 50 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 50 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 40 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1770 0
+
+fl=(4)
+fn=(34)
+442 300 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2600 128
+
+fl=(46) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteParser.php
+fn=(139) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteParser.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3560 1696
+cfl=(46)
+cfn=(139)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 530 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2900 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3580 1696
+
+fl=(47) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteParser\Std.php
+fn=(140) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\RouteParser\Std.php
+1 390 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+13 7010 1696
+
+fl=(4)
+fn=(36)
+575 10910 12624
+cfl=(47)
+cfn=(140)
+calls=1 0 0
+576 7400 1640
+
+fl=(4)
+fn=(37)
+423 410 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2900 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 18310 14264
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1490 0
+
+fl=(4)
+fn=(33)
+492 550 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1490 0
+
+fl=(4)
+fn=(34)
+442 260 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2110 160
+
+fl=(1)
+fn=(29)
+495 10 80
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 1 48
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 1 40
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1610 0
+
+fl=(4)
+fn=(33)
+492 567 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 10 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 1 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1610 0
+
+fl=(4)
+fn=(34)
+442 310 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2210 160
+
+fl=(1)
+fn=(29)
+495 40 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 40 40
+
+fl=(1)
+fn=(31)
+504 10 48
+
+fl=(1)
+fn=(32)
+506 1930 0
+
+fl=(4)
+fn=(33)
+492 550 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 40 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 40 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 48
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1930 0
+
+fl=(4)
+fn=(34)
+442 270 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2580 128
+
+fl=(48) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator.php
+fn=(141) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3910 1568
+cfl=(48)
+cfn=(141)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 640 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2850 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3930 1568
+
+fl=(49) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php
+fn=(142) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator\RegexBasedAbstract.php
+1 380 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+9 7420 1568
+
+fl=(4)
+fn=(36)
+575 15070 19904
+cfl=(49)
+cfn=(142)
+calls=1 0 0
+576 7800 1512
+
+fl=(4)
+fn=(37)
+423 500 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2520 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 22870 21416
+
+fl=(50) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator\GroupCountBased.php
+fn=(143) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\DataGenerator\GroupCountBased.php
+1 300 600
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+5 25890 21416
+
+fl=(4)
+fn=(36)
+575 5820 4840
+cfl=(50)
+cfn=(143)
+calls=1 0 0
+576 26190 22016
+
+fl=(4)
+fn=(37)
+423 340 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2370 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 32010 26856
+
+fl=(45)
+fn=(144) FastRoute\RouteCollector->__construct
+22 180 0
+
+fl=(30)
+fn=(145) Cascata\Framework\Routing\RouteGrouper->getRoutes
+9 40 0
+
+fl=(1)
+fn=(50)
+27 40 0
+
+fl=(1)
+fn=(146) php::strlen
+28 70 0
+
+fl=(1)
+fn=(146)
+28 10 0
+
+fl=(1)
+fn=(147) php::preg_split
+31 340 376
+
+fl=(1)
+fn=(148) php::count
+32 70 0
+
+fl=(1)
+fn=(149) php::preg_match_all
+63 110 56
+
+fl=(47)
+fn=(150) FastRoute\RouteParser\Std->parsePlaceholders
+59 350 320
+cfl=(1)
+cfn=(149)
+calls=1 0 0
+63 110 56
+
+fl=(47)
+fn=(151) FastRoute\RouteParser\Std->parse
+25 930 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+27 40 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 70 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 10 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+31 340 376
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+32 70 0
+cfl=(47)
+cfn=(150)
+calls=1 0 0
+48 460 376
+
+fl=(1)
+fn=(148)
+78 10 0
+
+fl=(1)
+fn=(126)
+78 20 0
+
+fl=(49)
+fn=(152) FastRoute\DataGenerator\RegexBasedAbstract->isStaticRoute
+76 190 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+78 10 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+78 20 0
+
+fl=(49)
+fn=(153) FastRoute\DataGenerator\RegexBasedAbstract->addStaticRoute
+81 310 752
+
+fl=(49)
+fn=(154) FastRoute\DataGenerator\RegexBasedAbstract->addRoute
+27 390 0
+cfl=(49)
+cfn=(152)
+calls=1 0 0
+29 220 0
+cfl=(49)
+cfn=(153)
+calls=1 0 0
+30 310 752
+
+fl=(45)
+fn=(155) FastRoute\RouteCollector->addRoute
+38 640 0
+cfl=(47)
+cfn=(151)
+calls=1 0 0
+41 1920 752
+cfl=(49)
+cfn=(154)
+calls=1 0 0
+44 920 752
+
+fl=(1)
+fn=(50)
+27 10 0
+
+fl=(1)
+fn=(146)
+28 1 0
+
+fl=(1)
+fn=(146)
+28 1 0
+
+fl=(1)
+fn=(147)
+31 50 376
+
+fl=(1)
+fn=(148)
+32 1 0
+
+fl=(1)
+fn=(149)
+63 130 1984
+
+fl=(1)
+fn=(31)
+72 10 32
+
+fl=(1)
+fn=(156) php::trim
+76 20 0
+
+fl=(1)
+fn=(146)
+78 1 0
+
+fl=(1)
+fn=(146)
+81 10 0
+
+fl=(47)
+fn=(150)
+59 659 0
+cfl=(1)
+cfn=(149)
+calls=1 0 0
+63 130 1984
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+72 10 32
+cfl=(1)
+cfn=(156)
+calls=1 0 0
+76 20 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+78 1 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+81 10 0
+
+fl=(47)
+fn=(151)
+25 587 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+27 10 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 1 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 1 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+31 50 376
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+32 1 0
+cfl=(47)
+cfn=(150)
+calls=1 0 0
+48 830 848
+
+fl=(1)
+fn=(148)
+78 10 0
+
+fl=(49)
+fn=(152)
+76 60 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+78 10 0
+
+fl=(1)
+fn=(126)
+131 10 0
+
+fl=(1)
+fn=(157) php::preg_quote
+132 20 0
+
+fl=(1)
+fn=(126)
+131 10 0
+
+fl=(1)
+fn=(158) php::strpos
+164 50 0
+
+fl=(49)
+fn=(159) FastRoute\DataGenerator\RegexBasedAbstract->regexHasCapturingGroups
+162 150 0
+cfl=(1)
+cfn=(158)
+calls=1 0 0
+164 50 0
+
+fl=(49)
+fn=(160) FastRoute\DataGenerator\RegexBasedAbstract->buildRegexForRoute
+126 650 792
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+131 10 0
+cfl=(1)
+cfn=(157)
+calls=1 0 0
+132 20 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+131 10 0
+cfl=(49)
+cfn=(159)
+calls=1 0 0
+144 200 0
+
+fl=(1)
+fn=(29)
+495 20 40
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 40
+
+fl=(1)
+fn=(32)
+506 1630 0
+
+fl=(4)
+fn=(33)
+492 500 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 40
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1630 0
+
+fl=(4)
+fn=(34)
+442 270 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2190 112
+
+fl=(51) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Route.php
+fn=(161) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Route.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 19440 3272
+cfl=(51)
+cfn=(161)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 420 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2460 112
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 19460 3272
+
+fl=(51)
+fn=(162) FastRoute\Route->__construct
+27 50 0
+
+fl=(49)
+fn=(163) FastRoute\DataGenerator\RegexBasedAbstract->addVariableRoute
+106 720 488
+cfl=(49)
+cfn=(160)
+calls=1 0 0
+108 890 792
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+117 22340 3272
+cfl=(51)
+cfn=(162)
+calls=1 0 0
+118 50 0
+
+fl=(49)
+fn=(154)
+27 460 0
+cfl=(49)
+cfn=(152)
+calls=1 0 0
+29 70 0
+cfl=(49)
+cfn=(163)
+calls=1 0 0
+32 24000 4552
+
+fl=(45)
+fn=(155)
+38 470 0
+cfl=(47)
+cfn=(151)
+calls=1 0 0
+41 1480 1224
+cfl=(49)
+cfn=(154)
+calls=1 0 0
+44 24530 4552
+
+fl=(1)
+fn=(50)
+27 10 0
+
+fl=(1)
+fn=(146)
+28 10 0
+
+fl=(1)
+fn=(146)
+28 10 0
+
+fl=(1)
+fn=(147)
+31 90 376
+
+fl=(1)
+fn=(148)
+32 10 0
+
+fl=(1)
+fn=(149)
+63 100 1984
+
+fl=(1)
+fn=(31)
+72 20 32
+
+fl=(1)
+fn=(156)
+76 40 0
+
+fl=(1)
+fn=(146)
+78 10 0
+
+fl=(1)
+fn=(146)
+81 10 0
+
+fl=(47)
+fn=(150)
+59 490 0
+cfl=(1)
+cfn=(149)
+calls=1 0 0
+63 100 1984
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+72 20 32
+cfl=(1)
+cfn=(156)
+calls=1 0 0
+76 40 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+78 10 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+81 10 0
+
+fl=(47)
+fn=(151)
+25 670 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+27 10 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 10 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 10 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+31 90 376
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+32 10 0
+cfl=(47)
+cfn=(150)
+calls=1 0 0
+48 670 848
+
+fl=(1)
+fn=(148)
+78 10 0
+
+fl=(49)
+fn=(152)
+76 70 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+78 10 0
+
+fl=(1)
+fn=(126)
+131 10 0
+
+fl=(1)
+fn=(157)
+132 10 0
+
+fl=(1)
+fn=(126)
+131 1 0
+
+fl=(1)
+fn=(158)
+164 20 0
+
+fl=(49)
+fn=(159)
+162 70 0
+cfl=(1)
+cfn=(158)
+calls=1 0 0
+164 20 0
+
+fl=(49)
+fn=(160)
+126 419 792
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+131 10 0
+cfl=(1)
+cfn=(157)
+calls=1 0 0
+132 10 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+131 1 0
+cfl=(49)
+cfn=(159)
+calls=1 0 0
+144 90 0
+
+fl=(51)
+fn=(162)
+27 40 0
+
+fl=(49)
+fn=(163)
+106 390 0
+cfl=(49)
+cfn=(160)
+calls=1 0 0
+108 530 792
+cfl=(51)
+cfn=(162)
+calls=1 0 0
+118 40 0
+
+fl=(49)
+fn=(154)
+27 320 0
+cfl=(49)
+cfn=(152)
+calls=1 0 0
+29 80 0
+cfl=(49)
+cfn=(163)
+calls=1 0 0
+32 960 528
+
+fl=(45)
+fn=(155)
+38 430 0
+cfl=(47)
+cfn=(151)
+calls=1 0 0
+41 1470 1224
+cfl=(49)
+cfn=(154)
+calls=1 0 0
+44 1360 528
+
+fl=(1)
+fn=(50)
+27 10 0
+
+fl=(1)
+fn=(146)
+28 1 0
+
+fl=(1)
+fn=(146)
+28 10 0
+
+fl=(1)
+fn=(147)
+31 20 376
+
+fl=(1)
+fn=(148)
+32 10 0
+
+fl=(1)
+fn=(149)
+63 20 56
+
+fl=(47)
+fn=(150)
+59 90 320
+cfl=(1)
+cfn=(149)
+calls=1 0 0
+63 20 56
+
+fl=(47)
+fn=(151)
+25 399 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+27 10 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 1 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+28 10 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+31 20 376
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+32 10 0
+cfl=(47)
+cfn=(150)
+calls=1 0 0
+48 110 376
+
+fl=(1)
+fn=(148)
+78 10 0
+
+fl=(1)
+fn=(126)
+78 10 0
+
+fl=(49)
+fn=(152)
+76 110 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+78 10 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+78 10 0
+
+fl=(49)
+fn=(153)
+81 70 376
+
+fl=(49)
+fn=(154)
+27 260 0
+cfl=(49)
+cfn=(152)
+calls=1 0 0
+29 130 0
+cfl=(49)
+cfn=(153)
+calls=1 0 0
+30 70 376
+
+fl=(45)
+fn=(155)
+38 400 0
+cfl=(47)
+cfn=(151)
+calls=1 0 0
+41 560 752
+cfl=(49)
+cfn=(154)
+calls=1 0 0
+44 460 376
+
+fl=(44)
+fn=(164) Cascata\Framework\Routing\Router->Cascata\Framework\Routing\{closure:C:\xampp\htdocs\frameworkPatterns\framework\src\Routing\Router.php:65-69}
+65 1060 0
+cfl=(30)
+cfn=(145)
+calls=1 0 0
+66 40 0
+cfl=(45)
+cfn=(155)
+calls=1 0 0
+67 3480 752
+cfl=(45)
+cfn=(155)
+calls=1 0 0
+67 26480 4584
+cfl=(45)
+cfn=(155)
+calls=1 0 0
+67 3260 560
+cfl=(45)
+cfn=(155)
+calls=1 0 0
+67 1420 376
+
+fl=(1)
+fn=(29)
+495 20 64
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 56
+
+fl=(1)
+fn=(32)
+506 1770 0
+
+fl=(4)
+fn=(33)
+492 580 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 56
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1770 0
+
+fl=(4)
+fn=(34)
+442 280 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2420 160
+
+fl=(1)
+fn=(29)
+495 30 64
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 1630 0
+
+fl=(4)
+fn=(33)
+492 519 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 30 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1630 0
+
+fl=(4)
+fn=(34)
+442 330 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2230 160
+
+fl=(1)
+fn=(29)
+495 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 40
+
+fl=(1)
+fn=(31)
+504 10 40
+
+fl=(1)
+fn=(32)
+506 1660 0
+
+fl=(4)
+fn=(33)
+492 460 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 40
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 40
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 1660 0
+
+fl=(4)
+fn=(34)
+442 290 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 2160 128
+
+fl=(52) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher.php
+fn=(165) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher.php
+1 20 0
+
+fl=(4)
+fn=(36)
+575 3580 1488
+cfl=(52)
+cfn=(165)
+calls=1 0 0
+576 20 0
+
+fl=(4)
+fn=(37)
+423 440 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2450 128
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 3600 1488
+
+fl=(53) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher\RegexBasedAbstract.php
+fn=(166) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher\RegexBasedAbstract.php
+1 360 264
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+7 6490 1488
+
+fl=(4)
+fn=(36)
+575 8700 10368
+cfl=(53)
+cfn=(166)
+calls=1 0 0
+576 6850 1752
+
+fl=(4)
+fn=(37)
+423 390 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2560 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 15550 12120
+
+fl=(54) C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher\GroupCountBased.php
+fn=(167) include::C:\xampp\htdocs\frameworkPatterns\vendor\nikic\fast-route\src\Dispatcher\GroupCountBased.php
+1 300 616
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+5 18500 12120
+
+fl=(4)
+fn=(36)
+575 6570 4872
+cfl=(54)
+cfn=(167)
+calls=1 0 0
+576 18800 12736
+
+fl=(4)
+fn=(37)
+423 420 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 2700 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 25370 17608
+
+fl=(1)
+fn=(148)
+55 10 0
+
+fl=(50)
+fn=(168) FastRoute\DataGenerator\GroupCountBased->getApproxChunkSize
+7 20 0
+
+fl=(1)
+fn=(169) php::round
+68 170 0
+
+fl=(1)
+fn=(170) php::max
+68 40 0
+
+fl=(1)
+fn=(171) php::ceil
+69 10 0
+
+fl=(49)
+fn=(172) FastRoute\DataGenerator\RegexBasedAbstract->computeChunkSize
+66 710 0
+cfl=(50)
+cfn=(168)
+calls=1 0 0
+68 20 0
+cfl=(1)
+cfn=(169)
+calls=1 0 0
+68 170 0
+cfl=(1)
+cfn=(170)
+calls=1 0 0
+68 40 0
+cfl=(1)
+cfn=(171)
+calls=1 0 0
+69 10 0
+
+fl=(1)
+fn=(173) php::array_chunk
+56 50 752
+
+fl=(1)
+fn=(148)
+18 10 0
+
+fl=(1)
+fn=(170)
+19 10 0
+
+fl=(1)
+fn=(174) php::str_repeat
+21 70 0
+
+fl=(1)
+fn=(148)
+18 10 0
+
+fl=(1)
+fn=(170)
+19 10 0
+
+fl=(1)
+fn=(174)
+21 10 40
+
+fl=(1)
+fn=(58)
+27 50 64
+
+fl=(50)
+fn=(175) FastRoute\DataGenerator\GroupCountBased->processChunk
+12 810 1464
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+18 10 0
+cfl=(1)
+cfn=(170)
+calls=1 0 0
+19 10 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+21 70 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+18 10 0
+cfl=(1)
+cfn=(170)
+calls=1 0 0
+19 10 0
+cfl=(1)
+cfn=(174)
+calls=1 0 0
+21 10 40
+cfl=(1)
+cfn=(58)
+calls=1 0 0
+27 50 64
+
+fl=(1)
+fn=(176) php::array_map
+57 370 376
+cfl=(50)
+cfn=(175)
+calls=1 0 0
+57 980 1568
+
+fl=(49)
+fn=(177) FastRoute\DataGenerator\RegexBasedAbstract->generateVariableRouteData
+51 720 0
+cfl=(1)
+cfn=(148)
+calls=1 0 0
+55 10 0
+cfl=(49)
+cfn=(172)
+calls=1 0 0
+55 950 0
+cfl=(1)
+cfn=(173)
+calls=1 0 0
+56 50 752
+cfl=(1)
+cfn=(176)
+calls=1 0 0
+57 1350 1944
+
+fl=(49)
+fn=(178) FastRoute\DataGenerator\RegexBasedAbstract->getData
+39 370 376
+cfl=(49)
+cfn=(177)
+calls=1 0 0
+45 3080 2320
+
+fl=(45)
+fn=(179) FastRoute\RouteCollector->getData
+161 260 0
+cfl=(49)
+cfn=(178)
+calls=1 0 0
+163 3450 2696
+
+fl=(54)
+fn=(180) FastRoute\Dispatcher\GroupCountBased->__construct
+7 80 0
+
+fl=(11)
+fn=(181) FastRoute\simpleDispatcher
+12 2740 0
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+22 27580 11680
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+23 21620 14264
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+23 34720 26856
+cfl=(45)
+cfn=(144)
+calls=1 0 0
+23 180 0
+cfl=(44)
+cfn=(164)
+calls=1 0 0
+25 35740 6272
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+27 28490 17608
+cfl=(45)
+cfn=(179)
+calls=1 0 0
+27 3710 2696
+cfl=(54)
+cfn=(180)
+calls=1 0 0
+27 80 0
+
+fl=(44)
+fn=(182) Cascata\Framework\Routing\Router->setRoutes
+62 15850 760
+cfl=(11)
+cfn=(181)
+calls=1 0 0
+69 154860 77264
+
+fl=(1)
+fn=(183) php::call_user_func_array:{C:\xampp\htdocs\frameworkPatterns\vendor\league\container\src\Definition\Definition.php:220}
+220 380 0
+cfl=(44)
+cfn=(182)
+calls=1 0 0
+220 170710 78024
+
+fl=(37)
+fn=(184) League\Container\Definition\Definition->invokeMethods
+215 1000 0
+cfl=(27)
+cfn=(133)
+calls=1 0 0
+218 400 408
+cfl=(1)
+cfn=(183)
+calls=1 0 0
+220 171090 78024
+
+fl=(19)
+fn=(129)
+32 60 0
+
+fl=(1)
+fn=(126)
+190 10 0
+
+fl=(37)
+fn=(185) League\Container\Definition\Definition->resolveNew
+157 1270 0
+cfl=(1)
+cfn=(125)
+calls=1 0 0
+161 100 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+174 10 0
+cfl=(1)
+cfn=(128)
+calls=1 0 0
+174 22810 10848
+cfl=(37)
+cfn=(136)
+calls=1 0 0
+175 1700 56
+cfl=(1)
+cfn=(137)
+calls=1 0 0
+178 10 0
+cfl=(37)
+cfn=(184)
+calls=1 0 0
+179 172490 78024
+cfl=(19)
+cfn=(129)
+calls=1 0 0
+183 60 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+190 10 0
+
+fl=(37)
+fn=(186) League\Container\Definition\Definition->resolve
+148 450 0
+cfl=(37)
+cfn=(185)
+calls=1 0 0
+154 198460 88928
+
+fl=(22)
+fn=(187) League\Container\Definition\DefinitionAggregate->resolve
+77 530 0
+cfl=(22)
+cfn=(108)
+calls=1 0 0
+79 730 0
+cfl=(37)
+cfn=(186)
+calls=1 0 0
+79 198910 88928
+
+fl=(26)
+fn=(188) League\Container\Inflector\InflectorAggregate->getIterator
+40 90 432
+
+fl=(26)
+fn=(188)
+40 80 0
+
+fl=(39)
+fn=(189) League\Container\Inflector\Inflector->getType
+42 40 0
+
+fl=(26)
+fn=(188)
+40 30 0
+
+fl=(26)
+fn=(190) League\Container\Inflector\InflectorAggregate->inflect
+26 870 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 90 432
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 80 0
+cfl=(39)
+cfn=(189)
+calls=1 0 0
+29 40 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 30 0
+
+fl=(18)
+fn=(191) League\Container\Container->resolve
+172 930 0
+cfl=(22)
+cfn=(105)
+calls=1 0 0
+174 470 0
+cfl=(22)
+cfn=(187)
+calls=1 0 0
+175 200170 88928
+cfl=(26)
+cfn=(190)
+calls=1 0 0
+176 1110 0
+
+fl=(18)
+fn=(192) League\Container\Container->get
+116 250 0
+cfl=(18)
+cfn=(191)
+calls=1 0 0
+118 202680 88928
+
+fl=(1)
+fn=(126)
+37 10 0
+
+fl=(27)
+fn=(133)
+16 1060 440
+cfl=(19)
+cfn=(129)
+calls=1 0 0
+19 40 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+37 20 0
+cfl=(18)
+cfn=(130)
+calls=1 0 0
+43 960 0
+cfl=(18)
+cfn=(192)
+calls=1 0 0
+45 202930 88928
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+37 10 0
+
+fl=(1)
+fn=(134)
+211 70 0
+
+fl=(22)
+fn=(103)
+113 20 432
+
+fl=(22)
+fn=(103)
+113 20 0
+
+fl=(37)
+fn=(104)
+86 10 0
+
+fl=(22)
+fn=(105)
+44 450 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+46 20 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+47 10 0
+
+fl=(22)
+fn=(103)
+113 20 432
+
+fl=(22)
+fn=(103)
+113 10 0
+
+fl=(37)
+fn=(104)
+86 20 0
+
+fl=(19)
+fn=(106)
+32 20 0
+
+fl=(19)
+fn=(107)
+17 50 0
+
+fl=(22)
+fn=(108)
+66 580 0
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 20 432
+cfl=(22)
+cfn=(103)
+calls=1 0 0
+68 10 0
+cfl=(37)
+cfn=(104)
+calls=1 0 0
+69 20 0
+cfl=(19)
+cfn=(106)
+calls=1 0 0
+70 20 0
+cfl=(19)
+cfn=(107)
+calls=1 0 0
+70 50 0
+
+fl=(1)
+fn=(125)
+161 60 0
+
+fl=(34)
+fn=(193) League\Container\Argument\LiteralArgument->getValue
+44 30 0
+
+fl=(34)
+fn=(193)
+44 60 0
+
+fl=(37)
+fn=(185)
+157 480 0
+cfl=(1)
+cfn=(125)
+calls=1 0 0
+161 60 0
+cfl=(34)
+cfn=(193)
+calls=1 0 0
+166 30 0
+cfl=(34)
+cfn=(193)
+calls=1 0 0
+167 60 0
+
+fl=(37)
+fn=(186)
+148 250 0
+cfl=(37)
+cfn=(185)
+calls=1 0 0
+154 630 0
+
+fl=(22)
+fn=(187)
+77 460 0
+cfl=(22)
+cfn=(108)
+calls=1 0 0
+79 700 0
+cfl=(37)
+cfn=(186)
+calls=1 0 0
+79 880 0
+
+fl=(26)
+fn=(188)
+40 20 432
+
+fl=(26)
+fn=(188)
+40 10 0
+
+fl=(39)
+fn=(189)
+42 10 0
+
+fl=(26)
+fn=(188)
+40 20 0
+
+fl=(26)
+fn=(190)
+26 460 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 20 432
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 10 0
+cfl=(39)
+cfn=(189)
+calls=1 0 0
+29 10 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 20 0
+
+fl=(18)
+fn=(191)
+172 700 0
+cfl=(22)
+cfn=(105)
+calls=1 0 0
+174 500 0
+cfl=(22)
+cfn=(187)
+calls=1 0 0
+175 2040 0
+cfl=(26)
+cfn=(190)
+calls=1 0 0
+176 520 0
+
+fl=(18)
+fn=(192)
+116 230 0
+cfl=(18)
+cfn=(191)
+calls=1 0 0
+118 3760 0
+
+fl=(42)
+fn=(194) Cascata\Framework\Http\Kernel->__construct
+13 260 0
+cfl=(18)
+cfn=(192)
+calls=1 0 0
+17 3990 0
+
+fl=(1)
+fn=(135)
+212 300 96
+cfl=(42)
+cfn=(194)
+calls=1 0 0
+212 4250 0
+
+fl=(37)
+fn=(136)
+208 690 0
+cfl=(27)
+cfn=(133)
+calls=1 0 0
+210 205020 89368
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+211 70 0
+cfl=(1)
+cfn=(135)
+calls=1 0 0
+212 4550 96
+
+fl=(1)
+fn=(137)
+178 10 0
+
+fl=(37)
+fn=(184)
+215 40 0
+
+fl=(19)
+fn=(129)
+32 10 0
+
+fl=(1)
+fn=(126)
+190 1 0
+
+fl=(37)
+fn=(185)
+157 1269 0
+cfl=(1)
+cfn=(125)
+calls=1 0 0
+161 140 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+174 10 0
+cfl=(1)
+cfn=(128)
+calls=1 0 0
+174 17060 6576
+cfl=(37)
+cfn=(136)
+calls=1 0 0
+175 210330 89024
+cfl=(1)
+cfn=(137)
+calls=1 0 0
+178 10 0
+cfl=(37)
+cfn=(184)
+calls=1 0 0
+179 40 0
+cfl=(19)
+cfn=(129)
+calls=1 0 0
+183 10 0
+cfl=(1)
+cfn=(126)
+calls=1 0 0
+190 1 0
+
+fl=(37)
+fn=(186)
+148 350 0
+cfl=(37)
+cfn=(185)
+calls=1 0 0
+154 228870 95600
+
+fl=(22)
+fn=(187)
+77 480 0
+cfl=(22)
+cfn=(108)
+calls=1 0 0
+79 940 0
+cfl=(37)
+cfn=(186)
+calls=1 0 0
+79 229220 95600
+
+fl=(26)
+fn=(188)
+40 50 432
+
+fl=(26)
+fn=(188)
+40 10 0
+
+fl=(39)
+fn=(189)
+42 10 0
+
+fl=(26)
+fn=(188)
+40 10 0
+
+fl=(26)
+fn=(190)
+26 410 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 50 432
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 10 0
+cfl=(39)
+cfn=(189)
+calls=1 0 0
+29 10 0
+cfl=(26)
+cfn=(188)
+calls=1 0 0
+28 10 0
+
+fl=(18)
+fn=(191)
+172 760 0
+cfl=(22)
+cfn=(105)
+calls=1 0 0
+174 930 0
+cfl=(22)
+cfn=(187)
+calls=1 0 0
+175 230640 95600
+cfl=(26)
+cfn=(190)
+calls=1 0 0
+176 490 0
+
+fl=(18)
+fn=(192)
+116 230 0
+cfl=(18)
+cfn=(191)
+calls=1 0 0
+118 232820 95600
+
+fl=(41)
+fn=(195) Cascata\Framework\Http\Request->getMethod
+27 60 0
+
+fl=(1)
+fn=(42)
+23 80 0
+
+fl=(1)
+fn=(196) php::strtok
+24 30 40
+
+fl=(41)
+fn=(197) Cascata\Framework\Http\Request->getPathInfo
+21 300 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+23 80 0
+cfl=(1)
+cfn=(196)
+calls=1 0 0
+24 30 40
+
+fl=(1)
+fn=(43)
+15 160 56
+
+fl=(54)
+fn=(198) FastRoute\Dispatcher\GroupCountBased->dispatchVariableRoute
+12 230 320
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+15 160 56
+
+fl=(53)
+fn=(199) FastRoute\Dispatcher\RegexBasedAbstract->dispatch
+20 510 0
+cfl=(54)
+cfn=(198)
+calls=1 0 0
+29 390 376
+
+fl=(1)
+fn=(29)
+495 20 80
+
+fl=(1)
+fn=(30)
+500 20 0
+
+fl=(1)
+fn=(31)
+501 20 64
+
+fl=(1)
+fn=(30)
+500 1 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(30)
+500 10 0
+
+fl=(1)
+fn=(31)
+501 10 48
+
+fl=(1)
+fn=(31)
+504 10 64
+
+fl=(1)
+fn=(32)
+506 12420 0
+
+fl=(4)
+fn=(33)
+492 849 0
+cfl=(1)
+cfn=(29)
+calls=1 0 0
+495 20 80
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 20 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 20 64
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 1 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+500 10 0
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+501 10 48
+cfl=(1)
+cfn=(31)
+calls=1 0 0
+504 10 64
+cfl=(1)
+cfn=(32)
+calls=1 0 0
+506 12420 0
+
+fl=(4)
+fn=(34)
+442 380 0
+cfl=(4)
+cfn=(33)
+calls=1 0 0
+458 13370 160
+
+fl=(55) C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Exceptions\HttpException.php
+fn=(200) include::C:\xampp\htdocs\frameworkPatterns\framework\src\Http\Exceptions\HttpException.php
+1 40 0
+
+fl=(4)
+fn=(36)
+575 9600 2048
+cfl=(55)
+cfn=(200)
+calls=1 0 0
+576 40 0
+
+fl=(4)
+fn=(37)
+423 710 0
+cfl=(4)
+cfn=(34)
+calls=1 0 0
+425 13750 160
+cfl=(4)
+cfn=(36)
+calls=1 0 0
+427 9640 2048
+
+fl=(1)
+fn=(201) php::Exception->__construct
+56 80 0
+
+fl=(55)
+fn=(202) Cascata\Framework\Http\Exceptions\HttpException->setStatusCode
+14 40 0
+
+fl=(44)
+fn=(203) Cascata\Framework\Routing\Router->extractRouteInfo
+40 2530 2544
+cfl=(41)
+cfn=(195)
+calls=1 0 0
+43 60 0
+cfl=(41)
+cfn=(197)
+calls=1 0 0
+44 410 40
+cfl=(53)
+cfn=(199)
+calls=1 0 0
+44 900 336
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+56 24100 2048
+cfl=(1)
+cfn=(201)
+calls=1 0 0
+56 80 0
+cfl=(55)
+cfn=(202)
+calls=1 0 0
+57 40 0
+
+fl=(44)
+fn=(204) Cascata\Framework\Routing\Router->dispatch
+21 420 0
+cfl=(44)
+cfn=(203)
+calls=1 0 0
+23 28120 4968
+
+fl=(1)
+fn=(205) php::in_array
+38 60 0
+
+fl=(42)
+fn=(206) Cascata\Framework\Http\Kernel->createExceptionResponse
+36 220 0
+cfl=(1)
+cfn=(205)
+calls=1 0 0
+38 60 0
+
+fl=(42)
+fn=(207) Cascata\Framework\Http\Kernel->handle
+20 460 0
+cfl=(44)
+cfn=(204)
+calls=1 0 0
+23 28540 4968
+cfl=(42)
+cfn=(206)
+calls=1 0 0
+27 280 0
+
+fl=(56) C:\xampp\htdocs\frameworkPatterns\public\index.php
+fn=(208) {main}
+1 59920 2680
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+11 240 80
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+11 240 24
+cfl=(14)
+cfn=(28)
+calls=1 0 0
+13 258120 96056
+cfl=(40)
+cfn=(121)
+calls=1 0 0
+15 399840 324648
+cfl=(4)
+cfn=(37)
+calls=1 0 0
+18 10770 4600
+cfl=(41)
+cfn=(124)
+calls=1 0 0
+18 380 128
+cfl=(18)
+cfn=(192)
+calls=1 0 0
+20 233050 95600
+cfl=(42)
+cfn=(207)
+calls=1 0 0
+23 29280 4968
+
+fl=(1)
+fn=(209) php::Exception->getTraceAsString
+1 240 4096
+
+fl=(1)
+fn=(210) php::Exception->__toString
+1 350 32
+cfl=(1)
+cfn=(209)
+calls=1 0 0
+0 240 4096
+
+summary: 1051620 967280
+
