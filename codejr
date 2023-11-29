@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+
+// set a base path
+
+// require autoloading
+
+// require the container
+
+// Get the console kernel from the container
+
+// call a handle method on the kernel, return the console application status
+
+// exit with the status

@@ -15,6 +15,8 @@ $templatesPath = BASE_PATH . "/templates";
 
 $container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
 
+$databaseUrl = 'sqlite:///' . BASE_PATH . '/var/db.sqlite';
+
 ## SERVICES
 /**
  * Esse bloco corresponde a autowiring de uma Router responsável pelo processamento das rotas
@@ -44,5 +46,14 @@ $container->add(\Cascata\Framework\Controller\AbstractController::class);
 
 $container->inflector(\Cascata\Framework\Controller\AbstractController::class)
     ->invokeMethod('setContainer', [$container]);
+
+$container->add(\Cascata\Framework\Dbal\ConnectionFactory::class)
+    ->addArguments([
+        new \League\Container\Argument\Literal\StringArgument($databaseUrl)
+    ]);
+
+$container->addShared(\Doctrine\DBAL\Connection::class, function() use($container): \Doctrine\DBAL\Connection {
+    return $container->get(\Cascata\Framework\Dbal\ConnectionFactory::class)->create();
+});
 
 return $container;
