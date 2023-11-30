@@ -53,7 +53,7 @@ class MigrateDatabase implements CommandInterface
             foreach($migrationsSql as $sql) {
                 $this->connection->executeQuery($sql);
             }
-            //dd($this->connection);
+
             // Execute the sql query
             $this->connection->commit();
             return 0;
