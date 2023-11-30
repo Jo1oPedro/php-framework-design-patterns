@@ -1,10 +1,11 @@
 <?php
 
+use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Doctrine\DBAL\Schema\Schema;
-use Doctrine\DBAL\Types\Types;
 
 return new class
 {
+    private $tableName = "user";
     public function up(Schema $schema): string
     {
         return "CREATE TABLE user (
@@ -15,8 +16,10 @@ return new class
         );";
     }
 
-    public function down(): void
+    public function down(AbstractSchemaManager $schemaManager): void
     {
-        echo get_class($this) . ' "down" method called' . PHP_EOL;
+        if($schemaManager->tablesExist($this->tableName)) {
+            $schemaManager->dropTable($this->tableName);
+        }
     }
 };

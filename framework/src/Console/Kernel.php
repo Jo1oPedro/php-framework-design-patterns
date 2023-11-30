@@ -43,7 +43,9 @@ final class Kernel
 
             if(is_subclass_of($command, CommandInterface::class)) {
                 // if it is a subclass of command interface
-                $commandName = (new \ReflectionClass($command))->getProperty('name')->getDefaultValue();
+                $commandName = (new \ReflectionClass($command))
+                    ->getProperty('name')
+                    ->getDefaultValue();
 
                 $this->container->add($commandName, $command);
                 // Add to the container, using the name as the id, example:

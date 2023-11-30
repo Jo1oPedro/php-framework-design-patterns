@@ -1,21 +1,28 @@
 <?php
 
+use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Doctrine\DBAL\Schema\Schema;
+use Doctrine\DBAL\Types\Types;
 
 return new class
 {
-    public function up(Schema $schema): void
+    private $tableName = "migrations";
+
+    public function up(Schema $schema): string //void
     {
-        $table = $schema->createTable('posts');
+        return "select * from migrations";
+        /*$table = $schema->createTable('posts');
         $table->addColumn('id', Types::INTEGER, ['autoincrement' => true, 'unsigned' => true]);
         $table->addColumn('title', Types::STRING, ['length' => 255]);
         $table->addColumn('body', Types::TEXT);
         $table->addColumn('created_at', Types::DATETIME_IMMUTABLE, ['default' => 'CURRENT_TIMESTAMP']);
-        $table->setPrimaryKey(['id']);
+        $table->setPrimaryKey(['id']);*/
     }
 
-    public function down(Schema $schema): void
+    public function down(AbstractSchemaManager $schemaManager): void
     {
-        echo get_class($this) . ' "down" method called' . PHP_EOL;
+        if($schemaManager->tablesExist($this->tableName)) {
+            $schemaManager->dropTable($this->tableName);
+        }
     }
 };

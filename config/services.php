@@ -82,4 +82,12 @@ $container->add(
     new \League\Container\Argument\Literal\StringArgument(BASE_PATH . '/migrations')
 ]);
 
+$container->add(
+    'database:migrations:rollback',
+    \Cascata\Framework\Console\Command\RollbackDatabase::class
+)->addArguments([
+    \Doctrine\DBAL\Connection::class,
+    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . "/migrations")
+]);
+
 return $container;
