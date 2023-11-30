@@ -10,10 +10,14 @@ $container->delegate(new \League\Container\ReflectionContainer(true));
 
 ## PARAMETERS
 include BASE_PATH . "/routes/web.php";
-$appEnv = $_SERVER['APP_ENV'];
+$symfonyDotEnvVars = explode(",", $_SERVER['SYMFONY_DOTENV_VARS']);
+//$appEnv = $_SERVER['APP_ENV'];
 $templatesPath = BASE_PATH . "/templates";
 
-$container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
+foreach($symfonyDotEnvVars as $symfonyDotEnvVar) {
+    //$container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
+    $container->add($symfonyDotEnvVar, new \League\Container\Argument\Literal\StringArgument($_SERVER[$symfonyDotEnvVar]));
+}
 
 //$databaseUrl = 'sqlite:///' . BASE_PATH . '/var/db.sqlite';
 $databaseUrl = 'mysql://root:@127.0.0.1:3306/codejr';
@@ -65,12 +69,17 @@ $container->add(\Cascata\Framework\Dbal\ConnectionFactory::class)
     ]);
 
 $container->addShared(\Doctrine\DBAL\Connection::class, function() use($container): \Doctrine\DBAL\Connection {
-    return $container->get(\Cascata\Framework\Dbal\ConnectionFactory::class)->create();
+    $connection = $container->get(\Cascata\Framework\Dbal\ConnectionFactory::class)->create();
+    $connection->setAutoCommit(false);
+    return $connection;
 });
 
 $container->add(
     'database:migrations:migrate',
     \Cascata\Framework\Console\Command\MigrateDatabase::class
-)->addArgument(\Doctrine\DBAL\Connection::class);
+)->addArguments([
+    \Doctrine\DBAL\Connection::class,
+    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . '/migrations')
+]);
 
 return $container;
