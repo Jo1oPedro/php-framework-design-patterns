@@ -32,6 +32,7 @@ class Application
         $options = $this->parseOptions($arguments);
 
         // Execute the command, return the status code
+        $options = array_merge(['BASE_PATH' => $this->container->get('BASE_PATH')], $options);
         $status = $command->execute($options);
 
         // Return the status code
