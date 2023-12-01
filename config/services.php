@@ -14,6 +14,8 @@ $symfonyDotEnvVars = explode(",", $_SERVER['SYMFONY_DOTENV_VARS']);
 //$appEnv = $_SERVER['APP_ENV'];
 $templatesPath = BASE_PATH . "/templates";
 
+$container->add("BASE_PATH", new \League\Container\Argument\Literal\StringArgument(BASE_PATH));
+
 foreach($symfonyDotEnvVars as $symfonyDotEnvVar) {
     //$container->add("APP_ENV", new \League\Container\Argument\Literal\StringArgument($appEnv));
     $container->add($symfonyDotEnvVar, new \League\Container\Argument\Literal\StringArgument($_SERVER[$symfonyDotEnvVar]));
@@ -25,6 +27,11 @@ $databaseUrl = 'mysql://root:@127.0.0.1:3306/codejr';
 $container->add(
     'base-commands-namespace',
     new \League\Container\Argument\Literal\StringArgument('Cascata\\Framework\\Console\\Command\\')
+);
+
+$container->add(
+    'base-developer-commands-namespace',
+    new \League\Container\Argument\Literal\StringArgument('App\\Console\\Command\\')
 );
 
 ## SERVICES
