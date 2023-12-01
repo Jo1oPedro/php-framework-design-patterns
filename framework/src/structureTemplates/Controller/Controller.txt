@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Controller;
+
+use Cascata\Framework\Controller\AbstractController;
+use Cascata\Framework\Http\Response;
+
+class {nameHolder} extends AbstractController
+{
+}

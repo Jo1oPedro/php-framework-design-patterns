@@ -1,0 +1,42 @@
+<?php
+
+namespace App\Controller;
+
+use Cascata\Framework\Controller\AbstractController;
+use Cascata\Framework\Http\Response;
+
+class {nameHolder} extends AbstractController
+{
+     public function index(): Response
+        {
+            $name = 'cascata';
+            return $this->render("teste.php", [
+                'name' => $name
+            ]);
+        }
+
+    public function create(): void
+    {
+
+    }
+
+    public function store(): Response
+    {
+
+    }
+
+    public function edit(): void
+    {
+
+    }
+
+    public function update(): Response
+    {
+
+    }
+
+    public function destroy(): void
+    {
+
+    }
+}
