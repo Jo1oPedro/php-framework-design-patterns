@@ -3,9 +3,6 @@
 namespace Cascata\Framework\Console;
 
 use Cascata\Framework\Console\Command\CommandInterface;
-use Doctrine\DBAL\Connection;
-use League\Container\Container;
-use MongoDB\Driver\Command;
 use Psr\Container\ContainerInterface;
 
 final class Kernel
@@ -17,20 +14,24 @@ final class Kernel
 
     public function handle(): int
     {
-        // Register commands with the container
-        $this->registerCommands();
+        // Register application commands with the container
+        $this->registerCommands(__DIR__ . "/Command", 'base-commands-namespace');
+
+        // Register developer commands with the container
+        $this->registerCommands($this->container->get('BASE_PATH') . "/src/Console/Command", 'base-developer-commands-namespace');
+
         // Run the console application, returning a status code
         $status = $this->application->run();
         // Return the status code
         return $status;
     }
 
-    private function registerCommands(): void
+    private function registerCommands(string $namespace, string $containerId): void
     {
         // === Register all built in commands ===
         // Get all files in the commands dir
-        $commandFiles = new \DirectoryIterator(__DIR__ . "/Command");
-        $namespace = $this->container->get('base-commands-namespace');
+        $commandFiles = new \DirectoryIterator($namespace);
+        $namespace = $this->container->get($containerId);
 
         // loop over all files in the commands folder
             /** @var \DirectoryIterator $commandFile */
