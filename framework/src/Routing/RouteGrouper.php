@@ -13,6 +13,6 @@ class RouteGrouper
 
     public function addRoute(string $httpMethod, string $path, array|callable $handler): void
     {
-        $this->routes[$path] = [$httpMethod, $path, $handler];
+        $this->routes[$httpMethod . "/" . $path] = [$httpMethod, $path, $handler];
     }
 }
