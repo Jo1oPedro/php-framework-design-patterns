@@ -21,9 +21,8 @@ class PostsController extends AbstractController
         return $this->renderTwig('create-post.html.twig');
     }
 
-    public function store(Request $request): void
+    public function store(): void
     {
-        dd($request);
-        dd('got here');
+        dd($this->request->postParams);
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Cascata\Framework\Controller;
 
+use Cascata\Framework\Http\Request;
 use Cascata\Framework\Http\Response;
 use Psr\Container\ContainerInterface;
 use Twig\Environment;
@@ -9,9 +10,16 @@ use Twig\Environment;
 abstract class AbstractController
 {
     protected ?ContainerInterface $container = null;
+    protected ?Request $request = null;
+
     public function setContainer(ContainerInterface $container): void
     {
         $this->container = $container;
+    }
+
+    public function setRequest(Request $request): void
+    {
+        $this->request = $request;
     }
 
     public function render(string $templatePath, array $parameters = [], Response $response = null): Response

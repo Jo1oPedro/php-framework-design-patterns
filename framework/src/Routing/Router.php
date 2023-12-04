@@ -2,6 +2,7 @@
 
 namespace Cascata\Framework\Routing;
 
+use Cascata\Framework\Controller\AbstractController;
 use Cascata\Framework\Http\Exceptions\HttpException;
 use Cascata\Framework\Http\Exceptions\HttpRequestMethodException;
 use Cascata\Framework\Http\Request;
@@ -27,6 +28,9 @@ class Router implements RouterInterface
         if(is_array($handler)) {
             [$controllerId, $method] = $handler;
             $controller = $container->get($controllerId);
+            if(is_subclass_of($controller, AbstractController::class)) {
+                $controller->setRequest($request);
+            }
             $handler = [$controller, $method];
         }
 
