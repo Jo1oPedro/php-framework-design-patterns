@@ -13,6 +13,8 @@ use function FastRoute\simpleDispatcher;
 
 class Router implements RouterInterface
 {
+    const CONTROLLER = 0;
+    const METHOD = 1;
     private Dispatcher $dispatcher;
 
     /**
@@ -27,11 +29,14 @@ class Router implements RouterInterface
 
         if(is_array($handler)) {
             [$controllerId, $method] = $handler;
+
             $controller = $container->get($controllerId);
-            if(is_subclass_of($controller, AbstractController::class)) {
+
+            /*if(is_subclass_of($controller, AbstractController::class)) {
                 $controller->setRequest($request);
-            }
+            }*/
             $handler = [$controller, $method];
+            $vars = $this->autoWireMethod($handler, $vars, $container);
         }
 
         return [$handler, $vars];
@@ -71,5 +76,20 @@ class Router implements RouterInterface
                 $routeCollector->addRoute(...$route);
             }
         });
+    }
+
+    private function autoWireMethod(array $handler, array $vars, ContainerInterface $container)
+    {
+        $reflection = new \ReflectionClass($handler[self::CONTROLLER]);
+        $parameters = $reflection->getMethod($handler[self::METHOD])->getParameters();
+
+        /** @var \ReflectionParameter $parameter */
+        foreach($parameters as $parameter) {
+            if(array_key_exists($parameter->getName(), $vars)) {
+                continue;
+            }
+            $vars[$parameter->getName()] = $container->get($parameter->getType()->getName());
+        }
+        return $vars;
     }
 }

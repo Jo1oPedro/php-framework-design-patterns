@@ -97,4 +97,6 @@ $container->add(
     new \League\Container\Argument\Literal\StringArgument(BASE_PATH . "/migrations")
 ]);
 
+$container->addShared(\Cascata\Framework\Http\Request::class, \Cascata\Framework\Http\Request::createFromGlobals());
+
 return $container;

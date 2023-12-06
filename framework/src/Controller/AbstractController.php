@@ -10,17 +10,17 @@ use Twig\Environment;
 abstract class AbstractController
 {
     protected ?ContainerInterface $container = null;
-    protected ?Request $request = null;
+    //protected ?Request $request = null;
 
     public function setContainer(ContainerInterface $container): void
     {
         $this->container = $container;
     }
 
-    public function setRequest(Request $request): void
+    /*public function setRequest(Request $request): void
     {
         $this->request = $request;
-    }
+    }*/
 
     public function render(string $templatePath, array $parameters = [], Response $response = null): Response
     {
