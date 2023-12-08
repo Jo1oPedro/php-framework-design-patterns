@@ -77,7 +77,7 @@ $container->add(\Cascata\Framework\Dbal\ConnectionFactory::class)
 
 $container->addShared(\Doctrine\DBAL\Connection::class, function() use($container): \Doctrine\DBAL\Connection {
     $connection = $container->get(\Cascata\Framework\Dbal\ConnectionFactory::class)->create();
-    $connection->setAutoCommit(false);
+    //$connection->setAutoCommit(false);
     return $connection;
 });
 

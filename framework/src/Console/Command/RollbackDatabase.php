@@ -27,7 +27,7 @@ class RollbackDatabase implements CommandInterface
                 $migration = require $this->migrationsPath . "/{$migrationsFile}";
                 $migration->down($schema);
             }
-            $this->connection->commit();
+            //$this->connection->commit();
 
             return 0;
         } catch (\Throwable $throwable) {

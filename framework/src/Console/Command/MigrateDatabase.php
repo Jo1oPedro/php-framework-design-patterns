@@ -55,7 +55,7 @@ class MigrateDatabase implements CommandInterface
             }
 
             // Execute the sql query
-            $this->connection->commit();
+            //$this->connection->commit();
             return 0;
         } catch (\Throwable $throwable) {
             $this->connection->rollBack();
