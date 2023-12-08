@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Post;
 use App\helpers\Helper;
+use App\Repository\PostMapper;
+use App\Repository\PostRepository;
 use Cascata\Framework\Controller\AbstractController;
 use Cascata\Framework\Http\Request;
 use Cascata\Framework\Http\Response;
@@ -11,17 +13,22 @@ use Cascata\Framework\Http\Response;
 
 class PostsController extends AbstractController
 {
-    private Helper $helper;
-    public function __construct(Helper $helper)
+    public function __construct(
+        private PostMapper $postMapper,
+        private PostRepository $postRepository
+    )
     {
-        $this->helper = $helper;
+
     }
 
     public function show(Request $request, int $id): Response
     {
+        $post = $this->postRepository->findOrFail($id);
+        return $this->render('teste.php', ["post" => $post]);
         return $this->renderTwig('posts.html.twig', [
             //"postId" => "<script>alert('you\'ve benn hacked')</script>"//$id
-            "postId" => $id
+            //"postId" => $id
+            "post" => $post
         ]);
     }
 
@@ -35,6 +42,8 @@ class PostsController extends AbstractController
         $variables = $request->all();
 
         $post = Post::create($variables->title, $variables->body);
+
+        $this->postMapper->save($post);
 
         dd($post);
     }

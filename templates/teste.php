@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    alou <?php echo $name ?>
+    alou <?php echo $post?->getId() ?>
 </body>
 </html>
