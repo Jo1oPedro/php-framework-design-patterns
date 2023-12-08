@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Post;
 use App\helpers\Helper;
 use Cascata\Framework\Controller\AbstractController;
 use Cascata\Framework\Http\Request;
@@ -29,8 +30,12 @@ class PostsController extends AbstractController
         return $this->renderTwig('create-post.html.twig');
     }
 
-    public function store(Request $request, int $id): void
+    public function store(Request $request): void
     {
-        //dd($this->request);
+        $variables = $request->all();
+
+        $post = Post::create($variables->title, $variables->body);
+
+        dd($post);
     }
 }
