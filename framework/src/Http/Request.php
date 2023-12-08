@@ -28,4 +28,10 @@ class Request
     {
         return $this->server['REQUEST_METHOD'];
     }
+
+    public function all(): \stdClass
+    {
+        $variables = (object) array_merge($this->getParams, $this->postParams);
+        return $variables;
+    }
 }
