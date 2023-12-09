@@ -1,6 +1,6 @@
 <?php
 
-namespace Cascata\Framework\Tests;
+namespace Cascata\Tests;
 
 class DependencyClass
 {

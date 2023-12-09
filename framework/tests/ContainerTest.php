@@ -1,6 +1,6 @@
 <?php
 
-namespace Cascata\Framework\Tests;
+namespace Cascata\Tests;
 
 use Cascata\Framework\Container\Container;
 use Cascata\Framework\Container\Exceptions\ContainerException;

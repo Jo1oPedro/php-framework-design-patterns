@@ -16,7 +16,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Cascata\\Framework\\Tests\\": "tests"
+      "Cascata\\Tests\\": "tests"
     }
   },
   "require-dev": {
