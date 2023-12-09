@@ -24,4 +24,14 @@ class Response
         $this->content = $content;
         return $this;
     }
+
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    public function getHeader(string $header): mixed
+    {
+        return $this->headers[$header];
+    }
 }
