@@ -3,10 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Post;
-use App\helpers\Helper;
 use App\Repository\PostMapper;
 use App\Repository\PostRepository;
 use Cascata\Framework\Controller\AbstractController;
+use Cascata\Framework\Http\RedirectResponse;
 use Cascata\Framework\Http\Request;
 use Cascata\Framework\Http\Response;
 
@@ -37,7 +37,7 @@ class PostsController extends AbstractController
         return $this->renderTwig('create-post.html.twig');
     }
 
-    public function store(Request $request): void
+    public function store(Request $request): Response
     {
         $variables = $request->all();
 
@@ -45,6 +45,6 @@ class PostsController extends AbstractController
 
         $this->postMapper->save($post);
 
-        dd($post);
+        return new RedirectResponse('/posts');
     }
 }
