@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php dd(session()->get('teste')); ?>
     alou <?php echo $post?->getId() ?>
 </body>
 </html>

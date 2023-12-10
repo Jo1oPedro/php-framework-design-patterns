@@ -9,6 +9,7 @@ use Cascata\Framework\Controller\AbstractController;
 use Cascata\Framework\Http\RedirectResponse;
 use Cascata\Framework\Http\Request;
 use Cascata\Framework\Http\Response;
+use Cascata\Framework\Session\Session;
 
 
 class PostsController extends AbstractController
@@ -18,14 +19,15 @@ class PostsController extends AbstractController
         private PostRepository $postRepository
     )
     {
-
     }
 
     public function show(Request $request, int $id): Response
     {
+        session()->set('teste', 'dale1234');
         $post = $this->postRepository->findOrFail($id);
+        return render('teste.php', ["post" => $post]);
         return $this->render('teste.php', ["post" => $post]);
-        return $this->renderTwig('posts.html.twig', [
+        return $this->renderTwig('posts.php.twig', [
             //"postId" => "<script>alert('you\'ve benn hacked')</script>"//$id
             //"postId" => $id
             "post" => $post
@@ -34,7 +36,9 @@ class PostsController extends AbstractController
 
     public function create(): Response
     {
-        return $this->renderTwig('create-post.html.twig');
+        return render('create-post.php');
+        //return $this->render('create-post.php');
+        //return $this->renderTwig('create-post.html.twig');
     }
 
     public function store(Request $request): Response
@@ -45,6 +49,7 @@ class PostsController extends AbstractController
 
         $this->postMapper->save($post);
 
-        return new RedirectResponse('/posts');
+        //return new RedirectResponse('/posts');
+        return redirect('/posts')->withFlash('success', true);
     }
 }
