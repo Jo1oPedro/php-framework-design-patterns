@@ -18,4 +18,16 @@ class RedirectResponse extends Response
         );
         exit();
     }
+
+    public function with(string $sessionName, mixed $sessionContent): RedirectResponse
+    {
+        session()->set($sessionName, $sessionContent);
+        return $this;
+    }
+
+    public function withFlash(string $sessionName, string $sessionMessage): RedirectResponse
+    {
+        session()->setFlash($sessionName, $sessionMessage);
+        return $this;
+    }
 }
