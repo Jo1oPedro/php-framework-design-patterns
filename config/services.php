@@ -4,7 +4,7 @@ $dotenv = new \Symfony\Component\Dotenv\Dotenv();
 
 $dotenv->load(BASE_PATH . "/.env");
 
-$container = new \League\Container\Container();
+$container = \Cascata\Framework\GlobalContainer\Container::getInstance();//new \League\Container\Container();
 
 $container->delegate(new \League\Container\ReflectionContainer(true));
 
@@ -59,11 +59,26 @@ $container->add(\Cascata\Framework\Console\Kernel::class)
 $container->add(\Cascata\Framework\Console\Application::class)
     ->addArgument($container);
 
-$container->addShared('filesystem-loader', \Twig\Loader\FilesystemLoader::class)
+/*$container->addShared('filesystem-loader', \Twig\Loader\FilesystemLoader::class)
     ->addArgument(new \League\Container\Argument\Literal\StringArgument($templatesPath));
 
 $container->addShared('twig', \Twig\Environment::class)
-    ->addArgument('filesystem-loader');
+    ->addArgument('filesystem-loader');*/
+
+$container->addShared(
+    \Cascata\Framework\Session\SessionInterface::class,
+    \Cascata\Framework\Session\Session::class
+);
+
+$container->add('template-renderer-factory', \Cascata\Framework\Template\TwigFactory::class)
+    ->addArguments([
+        \Cascata\Framework\Session\SessionInterface::class,
+        new \League\Container\Argument\Literal\StringArgument($templatesPath)
+    ]);
+
+$container->addShared('twig', function () use ($container) {
+    return $container->get('template-renderer-factory')->create();
+});
 
 $container->add(\Cascata\Framework\Controller\AbstractController::class);
 
