@@ -13,6 +13,9 @@
         <?php if(session()->hasFlash('success')):?>
             <?php dd(session()->getFlash('success')); ?>
         <?php endif; ?>
+        <?php if(session()->has('success')): ?>
+            <p>Sucesso</p>
+        <?php endif; ?>
         <form action="/posts" method="post">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>

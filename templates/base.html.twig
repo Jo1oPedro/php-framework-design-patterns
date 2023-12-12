@@ -9,6 +9,13 @@
 <body>
 
 <main class="container">
+    {% if session().hasFlash('success') %}
+        <ul style="list-style: none">
+            {% for message in session().getFlash('success') %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
     <div class="bg-light p-5 rounded">
         {% block main %} {% endblock %}
     </div>

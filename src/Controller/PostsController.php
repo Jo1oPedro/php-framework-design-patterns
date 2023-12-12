@@ -33,7 +33,7 @@ class PostsController extends AbstractController
             "post" => $post
         ]);
     }
-
+    
     public function create(): Response
     {
         return render('create-post.php');
@@ -50,6 +50,7 @@ class PostsController extends AbstractController
         $this->postMapper->save($post);
 
         //return new RedirectResponse('/posts');
-        return redirect('/posts')->withFlash('success', true);
+        return redirect('/posts')->with('success', true);
+        //return redirect('/posts')->withFlash('success', true);
     }
 }
