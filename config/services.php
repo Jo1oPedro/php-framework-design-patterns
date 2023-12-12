@@ -112,6 +112,15 @@ $container->add(
     new \League\Container\Argument\Literal\StringArgument(BASE_PATH . "/migrations")
 ]);
 
-$container->addShared(\Cascata\Framework\Http\Request::class, \Cascata\Framework\Http\Request::createFromGlobals());
+$container->addShared(
+    \Cascata\Framework\Http\Request::class,
+    \Cascata\Framework\Http\Request::createFromGlobals()
+);
+
+$container->inflector(\Cascata\Framework\Request\FormRequest::class)
+    ->invokeMethod(
+        'validateRequest',
+        [$container->get(\Cascata\Framework\Http\Request::class)]
+    );
 
 return $container;
