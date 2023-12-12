@@ -32,6 +32,8 @@
     "league/container": "^4.0.0",
     "symfony/dotenv": "^6.3",
     "twig/twig": "^3.8",
-    "doctrine/dbal": "^3.7"
+    "doctrine/dbal": "^3.7",
+    "particle/validator": "^2.3",
+    "respect/validation": "^2.2"
   }
 }
