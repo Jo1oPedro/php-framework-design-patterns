@@ -34,6 +34,7 @@
     "twig/twig": "^3.8",
     "doctrine/dbal": "^3.7",
     "particle/validator": "^2.3",
-    "respect/validation": "^2.2"
+    "respect/validation": "^2.2",
+    "ext-fileinfo": "*"
   }
 }
