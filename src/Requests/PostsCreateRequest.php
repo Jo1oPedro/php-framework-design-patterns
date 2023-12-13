@@ -9,7 +9,7 @@ class PostsCreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'string|int|min:2',
+            'title' => 'string|min:2',
             'body' => 'required',
             'bodyy' => 'noWhitespace|optional'
         ];

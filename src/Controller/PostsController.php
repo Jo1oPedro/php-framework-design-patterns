@@ -26,12 +26,12 @@ class PostsController extends AbstractController
         session()->set('teste', 'dale1234');
         $post = $this->postRepository->findOrFail($id);
         return render('teste.php', ["post" => $post]);
-        return $this->render('teste.php', ["post" => $post]);
-        return $this->renderTwig('posts.php.twig', [
+        //return $this->render('teste.php', ["post" => $post]);
+        /*return $this->renderTwig('posts.php.twig', [
             //"postId" => "<script>alert('you\'ve benn hacked')</script>"//$id
             //"postId" => $id
             "post" => $post
-        ]);
+        ]);*/
     }
     
     public function create(): Response
