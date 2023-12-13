@@ -29,7 +29,7 @@ abstract class FormRequest
         $errorsMessages = [];
 
         foreach($this->rules() as $key => $rule) {
-            $validator = $this->createValidator($key, $rule);
+            $validator = $this->createValidator($rule);
 
             try {
                 $fieldValue = $request->all()->$key;
@@ -65,24 +65,35 @@ abstract class FormRequest
         return $mappedMessages;
     }
 
-    private function createValidator(string $title, string $rule): Validator
+    private function createValidator(string $rule): Validator
     {
         $individualRules = $this->getIndividualRules($rule);
+        $this->orderRules($individualRules);
+
         $validator = new Validator();
 
-        foreach($individualRules as $individualRule) {
+        $optional = false;
+        if($individualRules[0] === "optional") {
+            $optional = true;
+        }
+
+        foreach($individualRules as $key => $individualRule) {
+            if($optional && $individualRule === "optional") {
+                continue;
+            }
+
             $args = is_array($individualRule) ? array_slice($individualRule, 1) : [];
             $method = count($args) ? $individualRule[self::RULE] : $individualRule;
 
-            if(strpos($method,'optional') !== false) {
-                $validatorOptional = new Validator();
-                $args = [
-                    call_user_func_array
-                    (
-                        [$validatorOptional, $args[0]],
-                        [],
+            if($optional) {
+                $individualValidator = new Validator();
+                $validator = $validator->optional(
+                    call_user_func_array(
+                        [$individualValidator, $method],
+                        $args
                     )
-                ];
+                );
+                continue;
             }
 
             $validator = call_user_func_array(
@@ -98,8 +109,7 @@ abstract class FormRequest
     {
         $individualRules = explode('|', $rules);
         if(
-            !in_array("optional:alpha", $individualRules) &&
-            !in_array("optional:digit", $individualRules) &&
+            !in_array("optional", $individualRules) &&
             !in_array("required", $individualRules)
         ) {
             array_unshift($individualRules, "required");
@@ -129,5 +139,15 @@ abstract class FormRequest
             $rules[$key] = self::RULE_MAP[$rule[self::RULE]];
         }
         return $rules;
+    }
+
+    public function orderRules(array &$rules): void
+    {
+        foreach($rules as $key => $rule) {
+            if($rule === "optional") {
+                array_unshift($rules, $rule);
+                unset($rules[$key + 1]);
+            }
+        }
     }
 }

@@ -11,7 +11,7 @@ class PostsCreateRequest extends FormRequest
         return [
             'title' => 'string|int|min:2',
             'body' => 'required',
-            'bodyy' => 'required|noWhitespace'
+            'bodyy' => 'noWhitespace|optional'
         ];
     }
 
