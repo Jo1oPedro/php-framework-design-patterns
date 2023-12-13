@@ -62,6 +62,7 @@ class Router implements RouterInterface
                 $excepetion->setStatusCode(405);
                 throw $excepetion;
             default:
+                file_put_contents('x.txt', json_encode($routeInfo) . PHP_EOL . PHP_EOL . json_encode($request) . PHP_EOL . PHP_EOL . $request->getMethod() . $request->getPathInfo() . PHP_EOL . "FIM REQUEST" . PHP_EOL, FILE_APPEND);
                 $excepetion = new HttpException("Route Not found");
                 $excepetion->setStatusCode(404);
                 throw $excepetion;
