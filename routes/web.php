@@ -16,6 +16,9 @@ $routeGrouper->addRoute('POST', '/posts', [PostsController::class, 'store']);
 $routeGrouper->addRoute('GET', 'post/{id:\d+}', function($id) {
     return new Response("este é o id: " . $id);
 });
+$routeGrouper->addRoute('GET', '/favicon.ico', function() {
+    return new Response('');
+});
 $routeGrouper->addRoute('POST', 'teste', [PostsController::class, 'show']);
 
 /*return [
