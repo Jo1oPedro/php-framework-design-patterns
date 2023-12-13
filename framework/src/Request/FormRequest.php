@@ -2,6 +2,7 @@
 
 namespace Cascata\Framework\Request;
 
+use Cascata\Framework\GlobalContainer\Container;
 use Cascata\Framework\Http\Request;
 use Respect\Validation\Exceptions\NestedValidationException;
 use Respect\Validation\Validator;
@@ -13,20 +14,16 @@ abstract class FormRequest
         'string' => 'stringType',
         'int' => 'intVal'
     ];
+
+    public function __call(string $name, mixed $arguments)
+    {
+        return Container::getInstance()->get(Request::class)->{$name}($arguments);
+    }
+
     public function validateRequest(Request $request)
     {
-        $validator = new Validator();
         foreach($this->rules() as $key => $rule) {
-            $individualRules = $this->getIndividualRules($rule);
-            foreach($individualRules as $individualRule) {
-                $args = is_array($individualRule) ? array_slice($individualRule, 1) : [];
-                $method = count($args) ? $individualRule[self::RULE] : $individualRule;
-
-                $validator = call_user_func_array(
-                    [$validator, $method],
-                    $args
-                );
-            }
+            $validator = $this->createValidator($rule);
 
             try {
                 $validator->assert($request->all()->$key);
@@ -38,7 +35,10 @@ abstract class FormRequest
                         '"' . $key . '"',
                         $errorsMessage);
                 }
-                dd($errorsMessages);
+
+                redirect($request->server["PATH_INFO"])
+                    ->with('errors', $errorsMessages)
+                    ->send();
             }
         }
     }
@@ -46,10 +46,21 @@ abstract class FormRequest
     public abstract function rules(): array;
     public abstract function messages(): array;
 
-    /*private function createRules(): Validator
+    private function createValidator(string $rule): Validator
     {
-        $this->getIndividualRules($rule);
-    }*/
+        $individualRules = $this->getIndividualRules($rule);
+        $validator = new Validator();
+        foreach($individualRules as $individualRule) {
+            $args = is_array($individualRule) ? array_slice($individualRule, 1) : [];
+            $method = count($args) ? $individualRule[self::RULE] : $individualRule;
+
+            $validator = call_user_func_array(
+                [$validator, $method],
+                $args
+            );
+        }
+        return $validator;
+    }
 
     private function getIndividualRules(string $rules): array
     {
