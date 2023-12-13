@@ -10,6 +10,9 @@
 
 <main class="container">
     <div class="bg-light p-5 rounded">
+        <?php foreach(errors() as $error): ?>
+            <?php echo $error . "<br>"; ?>
+        <?php endforeach ?>
         <?php if(session()->hasFlash('success')):?>
             <?php dd(session()->getFlash('success')); ?>
         <?php endif; ?>
