@@ -9,15 +9,18 @@ class PostsCreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string|between:10,20',
-            'body' => 'required|int'
+            'title' => 'optional:alpha|string',
+            'body' => 'required',
+            'body2' => 'required|noWhitespace'
         ];
     }
 
     public function messages(): array
     {
         return [
-            "greaterThan" => '{{name}} deve ser maior do que 2'
+            "greaterThan" => '{{name}} deve ser maior do que 2',
+            "int" => '{{name}} deve ser um inteiro',
+            'noWhitespace' => '{{name}} não deve conter espaços em branco',
         ];
     }
 }

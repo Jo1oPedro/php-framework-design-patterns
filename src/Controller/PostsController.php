@@ -19,8 +19,7 @@ class PostsController extends AbstractController
         private PostMapper $postMapper,
         private PostRepository $postRepository
     )
-    {
-    }
+    {}
 
     public function show(Request $request, int $id): Response
     {
