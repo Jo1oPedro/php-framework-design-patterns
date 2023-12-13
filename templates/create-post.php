@@ -32,8 +32,8 @@
                 <textarea required name="body" id="" cols="30" rows="10" class="form-control"></textarea>
             </div>
             <div class="mb-3">
-                <label for="body2" class="form-label">Body</label>
-                <textarea required name="body2" id="" cols="30" rows="10" class="form-control"></textarea>
+                <label for="bodyy" class="form-label">Body</label>
+                <textarea required name="bodyy" id="" cols="30" rows="10" class="form-control"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

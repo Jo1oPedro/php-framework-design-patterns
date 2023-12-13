@@ -9,18 +9,20 @@ class PostsCreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'optional:alpha|string',
+            'title' => 'string|int|min:2',
             'body' => 'required',
-            'body2' => 'required|noWhitespace'
+            'bodyy' => 'required|noWhitespace'
         ];
     }
 
     public function messages(): array
     {
         return [
+            "min" => 'O campo {{name}} deve ser maior do que 2',
             "greaterThan" => '{{name}} deve ser maior do que 2',
-            "int" => '{{name}} deve ser um inteiro',
+            "int" => 'O campo {{name}} deve ser um inteiro',
             'noWhitespace' => '{{name}} não deve conter espaços em branco',
+            'required' => 'O campo {{name}} deve ser preenchido',
         ];
     }
 }

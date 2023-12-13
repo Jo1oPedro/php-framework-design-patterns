@@ -13,7 +13,7 @@ abstract class FormRequest
     private const RULE_MAP = [
         'required' => 'notOptional',
         'string' => 'stringType',
-        'int' => 'IntVal',
+        'int' => 'intVal',
         'greaterThan' => 'greaterThan',
         'noWhitespace' => 'noWhitespace',
         'optional' => 'optional'
@@ -32,9 +32,13 @@ abstract class FormRequest
             $validator = $this->createValidator($key, $rule);
 
             try {
-                $validator->assert((array) $request->all());
+                $fieldValue = $request->all()->$key;
+                $validator->assert($fieldValue);
             } catch (NestedValidationException $exception) {
                 $errorsMessages[$key] = $exception->getMessages($this->mapMessages());
+                foreach($errorsMessages as $key => $errorsMessage) {
+                    $errorsMessages[$key] = str_replace('"' . $fieldValue . '"' , $key, $errorsMessage);
+                }
             }
         }
 
@@ -70,7 +74,6 @@ abstract class FormRequest
             $args = is_array($individualRule) ? array_slice($individualRule, 1) : [];
             $method = count($args) ? $individualRule[self::RULE] : $individualRule;
 
-            $optional = true;
             if(strpos($method,'optional') !== false) {
                 $validatorOptional = new Validator();
                 $args = [
@@ -80,16 +83,11 @@ abstract class FormRequest
                         [],
                     )
                 ];
-                $optional = false;
             }
 
-            $validator = $validator::key(
-                $title,
-                call_user_func_array(
-                    [$validator, $method],
-                    $args,
-                ),
-                $optional
+            $validator = call_user_func_array(
+                [$validator, $method],
+                $args
             );
         }
 
@@ -100,7 +98,9 @@ abstract class FormRequest
     {
         $individualRules = explode('|', $rules);
         if(
-            !in_array("optional:alpha", $individualRules) && !in_array("optional:digit", $individualRules)
+            !in_array("optional:alpha", $individualRules) &&
+            !in_array("optional:digit", $individualRules) &&
+            !in_array("required", $individualRules)
         ) {
             array_unshift($individualRules, "required");
         }
