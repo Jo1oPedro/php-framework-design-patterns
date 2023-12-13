@@ -42,16 +42,16 @@ class PostsController extends AbstractController
         //return $this->renderTwig('create-post.html.twig');
     }
 
-    public function store(Request $request, PostsCreateRequest $postRequest): Response
+    public function store(PostsCreateRequest $postRequest): Response
     {
-        $variables = $request->all();
+        $variables = $postRequest->all();
 
         $post = Post::create($variables->title, $variables->body);
 
         $this->postMapper->save($post);
 
         //return new RedirectResponse('/posts');
-        return redirect('/posts')->with('success', true);
+        return redirect('/posts')->withFlash('success', true);
         //return redirect('/posts')->withFlash('success', true);
     }
 }

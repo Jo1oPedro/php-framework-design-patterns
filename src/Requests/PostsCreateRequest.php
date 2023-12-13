@@ -9,7 +9,7 @@ class PostsCreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string',
+            'title' => 'required|string|between:10,20',
             'body' => 'required|int'
         ];
     }
