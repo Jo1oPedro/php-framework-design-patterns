@@ -7,7 +7,7 @@ use Cascata\Framework\Routing\RouteGrouper;
 
 $routeGrouper = new RouteGrouper();
 
-$routeGrouper->addRoute('GET', '/x', [HomeController::class, 'index']);
+$routeGrouper->addRoute('GET', '/', [HomeController::class, 'index']);
 $routeGrouper->addRoute('GET', '/x2', [HomeController::class, 'index2']);
 $routeGrouper->addRoute('GET', '/posts/{id:\d+}', [PostsController::class, 'show']);
 $routeGrouper->addRoute('POST', 'post/{id:\d+}', [PostsController::class, 'show']);
