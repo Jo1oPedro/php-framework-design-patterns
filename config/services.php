@@ -101,7 +101,7 @@ $container->add(
     \Cascata\Framework\Console\Command\MigrateDatabase::class
 )->addArguments([
     \Doctrine\DBAL\Connection::class,
-    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . '/migrations')
+    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . '/database/migrations')
 ]);
 
 $container->add(
@@ -109,7 +109,7 @@ $container->add(
     \Cascata\Framework\Console\Command\RollbackDatabase::class
 )->addArguments([
     \Doctrine\DBAL\Connection::class,
-    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . "/migrations")
+    new \League\Container\Argument\Literal\StringArgument(BASE_PATH . "/database/migrations")
 ]);
 
 $container->addShared(
