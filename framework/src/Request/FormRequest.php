@@ -10,13 +10,14 @@ use Respect\Validation\Validator;
 abstract class FormRequest
 {
     private const RULE = 0;
+    private const RULE_PARAMS = 1;
     private const RULE_MAP = [
         'required' => 'notOptional',
         'string' => 'stringType',
         'int' => 'intVal',
         'greaterThan' => 'greaterThan',
         'noWhitespace' => 'noWhitespace',
-        'optional' => 'optional'
+        'optional' => 'optional',
     ];
 
     public function __call(string $name, mixed $arguments)
@@ -37,7 +38,7 @@ abstract class FormRequest
             } catch (NestedValidationException $exception) {
                 $errorsMessages[$key] = $exception->getMessages($this->mapMessages());
                 foreach($errorsMessages as $key => $errorsMessage) {
-                    $errorsMessages[$key] = str_replace('"' . $fieldValue . '"' , $key, $errorsMessage);
+                    $errorsMessages[$key] = str_replace('"' . $fieldValue . '"' , $this->translateField($key), $errorsMessage);
                 }
             }
         }
@@ -65,6 +66,14 @@ abstract class FormRequest
         return $mappedMessages;
     }
 
+    public function translateField(string $field): string
+    {
+        if(isset($this->fields()[$field])) {
+            return $this->fields()[$field];
+        }
+        return $field;
+    }
+
     private function createValidator(string $rule): Validator
     {
         $individualRules = $this->getIndividualRules($rule);
@@ -83,6 +92,7 @@ abstract class FormRequest
             }
 
             $args = is_array($individualRule) ? array_slice($individualRule, 1) : [];
+
             $method = count($args) ? $individualRule[self::RULE] : $individualRule;
 
             if($optional) {
@@ -129,6 +139,13 @@ abstract class FormRequest
                 }
             }
 
+            if(isset($rule[self::RULE_PARAMS]) && str_contains($rule[self::RULE_PARAMS], ',')) {
+                $rulesParams = explode(',', $rule[self::RULE_PARAMS]);
+                unset($rule[self::RULE_PARAMS]);
+                $ruleParams = array_merge($rule, $rulesParams);
+                $rules[$key] = $ruleParams;
+            }
+
             if(is_array($rules[$key])) {
                 if(in_array($rules[$key][self::RULE], array_keys(self::RULE_MAP))) {
                     $rules[$key][self::RULE] = self::RULE_MAP[$rule[self::RULE]];
@@ -138,6 +155,7 @@ abstract class FormRequest
 
             $rules[$key] = self::RULE_MAP[$rule[self::RULE]];
         }
+
         return $rules;
     }
 

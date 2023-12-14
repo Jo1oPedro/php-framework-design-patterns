@@ -9,9 +9,10 @@ class PostsCreateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'string|min:2',
-            'body' => 'required',
-            'bodyy' => 'noWhitespace|optional'
+            //'title' => 'required|between:1,3',
+            'title' => 'string|contains:cascata',
+            //'body' => 'required',
+            //'bodyy' => 'noWhitespace|optional|between:1,2'
         ];
     }
 
@@ -23,6 +24,15 @@ class PostsCreateRequest extends FormRequest
             "int" => 'O campo {{name}} deve ser um inteiro',
             'noWhitespace' => '{{name}} não deve conter espaços em branco',
             'required' => 'O campo {{name}} deve ser preenchido',
+            'between' => 'O campo {{name}} deve ter valores entre: {{minValue}} e {{maxValue}}',
+            'contains' => 'O campo {{name}} deve conter a palavra: {{containsValue}}'
+        ];
+    }
+
+    public function fields(): array
+    {
+        return [
+            'title' => 'titulo'
         ];
     }
 }
