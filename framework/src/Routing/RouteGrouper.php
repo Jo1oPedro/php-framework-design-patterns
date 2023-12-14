@@ -7,10 +7,9 @@ use Cascata\Framework\Http\Response;
 
 class RouteGrouper
 {
-    public function __construct(string $faviconPath = "/public/images/favicon.ico")
+    public function __construct(string $faviconPath = "/favicon.ico")
     {
         $this->addRoute('GET', $faviconPath, function() {
-
             $basePath = Container::getInstance()->get('BASE_PATH');
             $imagePath = $basePath . "/public/images/favicon.ico";
             $contentType = mime_content_type($imagePath);
