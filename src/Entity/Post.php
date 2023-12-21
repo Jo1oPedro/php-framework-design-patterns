@@ -2,9 +2,10 @@
 
 namespace App\Entity;
 
+use Cascata\Framework\Entity\Entity;
 use DateTimeImmutable;
 
-class Post
+class Post extends Entity
 {
     public function __construct(
       private ?int $id,

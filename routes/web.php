@@ -19,7 +19,7 @@ $routeGrouper->addRoute('GET', 'post/{id:\d+}', function($id) {
 $routeGrouper->addRoute('POST', 'teste', [PostsController::class, 'show']);
 $routeGrouper->addRoute('GET', '/x', function () {
     $post = new \Database\Factories\PostFactory();
-    dd($post->create());
+    dd($post->count(2)->create());
 });
 /*return [
     ['GET', 'x', [HomeController::class, 'index']],
