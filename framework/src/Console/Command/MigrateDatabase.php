@@ -55,7 +55,7 @@ class MigrateDatabase implements CommandInterface
             }
 
             if(array_key_exists("seed", $params)) {
-                shell_exec("php codejr run:factories");
+                shell_exec("php codejr run:seeders");
             }
             // Execute the sql query
             //$this->connection->commit();
