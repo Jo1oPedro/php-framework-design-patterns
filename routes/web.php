@@ -16,10 +16,13 @@ $routeGrouper->addRoute('POST', '/posts', [PostsController::class, 'store']);
 $routeGrouper->addRoute('GET', 'post/{id:\d+}', function($id) {
     return new Response("este é o id: " . $id);
 });
-$routeGrouper->addRoute('POST', 'teste', [PostsController::class, 'show']);
+$routeGrouper->addRoute('POST', '/teste', [PostsController::class, 'show']);
 $routeGrouper->addRoute('GET', '/x', function () {
     $post = new \Database\Factories\PostFactory();
     dd($post->count(2)->create());
+});
+$routeGrouper->addRoute('GET', '/c', function () {
+    (new \Database\Seeders\DatabaseSeeder())->run();
 });
 /*return [
     ['GET', 'x', [HomeController::class, 'index']],
