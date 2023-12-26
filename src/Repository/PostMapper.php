@@ -23,7 +23,7 @@ class PostMapper
         );
 
         $stmt->bindValue(':title', $post->getTitle());
-        $stmt->bindValue(':body', $post->getTitle());
+        $stmt->bindValue(':body', $post->getBody());
         $stmt->bindValue(':created_at', $post->getCreatedAt()->format('Y-m-d H:i:s'));
 
         $stmt->executeStatement();
