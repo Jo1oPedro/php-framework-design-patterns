@@ -1,6 +1,6 @@
 <?php
 
-namespace Cascata\Framework\Database;
+namespace Cascata\Framework\Database\Factory;
 
 use Cascata\Framework\GlobalContainer\Container;
 use Faker\Factory;
