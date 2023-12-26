@@ -1,0 +1,15 @@
+<?php
+
+namespace Database\Factories;
+
+use Cascata\Framework\Database\Faker;
+
+class {nameHolder} extends Faker
+{
+    public function definition()
+    {
+        return [
+            'title' => $this->factory->name('male')
+        ];
+    }
+}
