@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use Cascata\Framework\Database\Factory\Faker;
+use Cascata\Framework\Database\Faker;
 
 class PostFactory extends Faker
 {

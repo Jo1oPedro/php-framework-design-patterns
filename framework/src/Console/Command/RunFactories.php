@@ -2,7 +2,7 @@
 
 namespace Cascata\Framework\Console\Command;
 
-use Cascata\Framework\Database\Factory\Faker;
+use Cascata\Framework\Database\Faker;
 use Cascata\Framework\GlobalContainer\Container;
 
 class RunFactories implements CommandInterface
