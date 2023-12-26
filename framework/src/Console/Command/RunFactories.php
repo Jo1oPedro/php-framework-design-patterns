@@ -21,7 +21,7 @@ class RunFactories implements CommandInterface
                 $reflectionMethod->invoke($factoryInstance);
             }
         }
-        return 1;
+        return 0;
     }
 
     private function getFactories(string $basePath)
