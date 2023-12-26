@@ -16,7 +16,7 @@ abstract class Faker
         $this->factory = Factory::create();
     }
 
-    public function count(int $rows): Faker
+    private function count(int $rows): Faker
     {
         $this->rows = $rows;
         return $this;
@@ -39,4 +39,9 @@ abstract class Faker
     }
 
     public abstract function definition();
+
+    public static function __callStatic(string $name, array $arguments)
+    {
+        return (new static())->$name(...$arguments);
+    }
 }
